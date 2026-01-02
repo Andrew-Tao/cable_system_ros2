@@ -11,4 +11,6 @@ source .venv/bin/activate
 ```
 
 Start the cable experimental system:
-`ros2 launch spirob_bringup spirob.launch.py`
+
+```bash 
+ros2 launch spirob_bringup spirob.launch.py```
