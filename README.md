@@ -10,14 +10,14 @@ sudo gpiod # password is "password"
 source .venv/bin/activate
 ```
 
-Start the cable experimental system:
+Start the cable experimental system and it will run motor_driver, vision, load_cell.
 
 ```bash 
 ros2 launch spirob_bringup spirob.launch.py
 ```
-This command will run motor_driver, vision, load_cell.
 
-Then open a terminal on the mac and run the `launch_socket_pipe.py` to build TCP connection with raspberry pi:
+
+Then open a terminal on the mac and run the `launch_socket_pipe.py` to build TCP connection with raspberry pi. The video and GUI will be automatically display on your macbook.
 
 ```bash 
 cd spirob_ws/
