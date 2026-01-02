@@ -22,5 +22,5 @@ Then open a terminal on the mac and run the `launch_socket_pipe.py` to build TCP
 ```bash 
 cd spirob_ws/
 source spirob_venv/bin/activate
-python3 /src/launch_socket_pipe.py
+python3 launch_socket_pipe.py
 ```
