@@ -12,7 +12,7 @@ Before launch the system, run
 ```bash
 cd ros2_spirob_ws
 source install/setup.bash
-sudo gpiod # password is "password"
+sudo pigpiod # password is "password"
 source .venv/bin/activate
 ```
 
