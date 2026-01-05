@@ -21,6 +21,12 @@ source .venv/bin/activate
 ```bash 
 ros2 launch spirob_bringup spirob.launch.py
 ```
+If you want to use the joysticker to control the system run
+
+
+```bash 
+ros2 launch spirob_bringup spirob_joy.launch.py
+```
 
 2. Then open a terminal on the mac and run the `launch_socket_pipe.py` to build TCP connection with raspberry pi. The video and GUI will be automatically display on your macbook.
 
