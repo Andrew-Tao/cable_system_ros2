@@ -1,0 +1,2 @@
+[console_scripts]
+robot_GUI_node = robot_GUI.robot_GUI_node:main

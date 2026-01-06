@@ -1,0 +1,43 @@
+[5.156s] Invoking command in '/home/mgazzola/ros2_spirob_ws/build/more_interfaces': CMAKE_PREFIX_PATH=/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mgazzola/ros2_spirob_ws/src/more_interfaces -DCMAKE_INSTALL_PREFIX=/home/mgazzola/ros2_spirob_ws/install/more_interfaces
+[6.046s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[8.898s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[9.116s] -- Found rosidl_default_generators: 1.7.1 (/opt/ros/kilted/share/rosidl_default_generators/cmake)
+[9.168s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.899s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.439s] -- Found rosidl_adapter: 4.9.5 (/opt/ros/kilted/share/rosidl_adapter/cmake)
+[10.475s] -- Found geometry_msgs: 5.5.1 (/opt/ros/kilted/share/geometry_msgs/cmake)
+[13.578s] [31mCMake Error at /opt/ros/kilted/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[13.591s]   execute_process(/home/mgazzola/ros2_spirob_ws/.venv/bin/python3 -m
+[13.592s]   rosidl_adapter --package-name more_interfaces --arguments-file
+[13.593s]   /home/mgazzola/ros2_spirob_ws/build/more_interfaces/rosidl_adapter__arguments__more_interfaces.json
+[13.595s]   --output-dir
+[13.596s]   /home/mgazzola/ros2_spirob_ws/build/more_interfaces/rosidl_adapter/more_interfaces
+[13.596s]   --output-file
+[13.597s]   /home/mgazzola/ros2_spirob_ws/build/more_interfaces/rosidl_adapter/more_interfaces.idls)
+[13.598s]   returned error code 1:
+[13.599s] 
+[13.600s]   Traceback (most recent call last):
+[13.600s] 
+[13.601s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[13.602s]     File "<frozen runpy>", line 88, in _run_code
+[13.603s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[13.604s]       main()
+[13.605s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/main.py", line 54, in main
+[13.608s]       abs_idl_file = convert_to_idl(
+[13.610s]                      ^^^^^^^^^^^^^^^
+[13.610s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 21, in convert_to_idl
+[13.612s]       from rosidl_adapter.msg import convert_msg_to_idl
+[13.612s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 19, in <module>
+[13.615s]       from rosidl_adapter.resource import expand_template, MsgData
+[13.618s]     File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/resource/__init__.py", line 21, in <module>
+[13.619s]       import em
+[13.620s] 
+[13.621s]   ModuleNotFoundError: No module named 'em'
+[13.623s] 
+[13.624s] Call Stack (most recent call first):
+[13.625s]   /opt/ros/kilted/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[13.626s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[13.627s] 
+[13.628s] [0m
+[13.630s] -- Configuring incomplete, errors occurred!
+[13.743s] Invoked command in '/home/mgazzola/ros2_spirob_ws/build/more_interfaces' returned '1': CMAKE_PREFIX_PATH=/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mgazzola/ros2_spirob_ws/src/more_interfaces -DCMAKE_INSTALL_PREFIX=/home/mgazzola/ros2_spirob_ws/install/more_interfaces

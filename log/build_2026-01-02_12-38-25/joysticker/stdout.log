@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing joysticker.egg-info/PKG-INFO
+writing dependency_links to joysticker.egg-info/dependency_links.txt
+writing entry points to joysticker.egg-info/entry_points.txt
+writing requirements to joysticker.egg-info/requires.txt
+writing top-level names to joysticker.egg-info/top_level.txt
+reading manifest file 'joysticker.egg-info/SOURCES.txt'
+writing manifest file 'joysticker.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages/joysticker.egg-link (link to .)
+Installing joysticker_publisher_node script to /home/mgazzola/ros2_spirob_ws/install/joysticker/lib/joysticker
+
+Installed /home/mgazzola/ros2_spirob_ws/build/joysticker
+running symlink_data

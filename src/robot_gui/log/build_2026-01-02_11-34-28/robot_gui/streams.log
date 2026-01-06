@@ -1,0 +1,38 @@
+[3.548s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/robot_gui': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/robot_gui build --build-base /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build install --record /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/install.log --single-version-externally-managed install_data
+[4.674s] running egg_info
+[4.675s] creating build/robot_gui/robot_GUI.egg-info
+[4.752s] writing build/robot_gui/robot_GUI.egg-info/PKG-INFO
+[4.754s] writing dependency_links to build/robot_gui/robot_GUI.egg-info/dependency_links.txt
+[4.755s] writing entry points to build/robot_gui/robot_GUI.egg-info/entry_points.txt
+[4.755s] writing requirements to build/robot_gui/robot_GUI.egg-info/requires.txt
+[4.756s] writing top-level names to build/robot_gui/robot_GUI.egg-info/top_level.txt
+[4.757s] writing manifest file 'build/robot_gui/robot_GUI.egg-info/SOURCES.txt'
+[4.921s] reading manifest file 'build/robot_gui/robot_GUI.egg-info/SOURCES.txt'
+[4.923s] writing manifest file 'build/robot_gui/robot_GUI.egg-info/SOURCES.txt'
+[4.924s] running build
+[4.925s] running build_py
+[4.926s] creating /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build
+[4.926s] creating /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build/lib
+[4.927s] creating /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build/lib/robot_gui
+[4.927s] copying robot_gui/robot_GUI_node.py -> /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build/lib/robot_gui
+[4.928s] copying robot_gui/__init__.py -> /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build/lib/robot_gui
+[4.929s] copying robot_gui/robot_GUI_display.py -> /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build/lib/robot_gui
+[4.930s] running install
+[4.955s] running install_lib
+[5.034s] creating /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/python3.12/site-packages/robot_gui
+[5.034s] copying /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build/lib/robot_gui/robot_GUI_node.py -> /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/python3.12/site-packages/robot_gui
+[5.035s] copying /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build/lib/robot_gui/__init__.py -> /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/python3.12/site-packages/robot_gui
+[5.036s] copying /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build/lib/robot_gui/robot_GUI_display.py -> /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/python3.12/site-packages/robot_gui
+[5.039s] byte-compiling /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/python3.12/site-packages/robot_gui/robot_GUI_node.py to robot_GUI_node.cpython-312.pyc
+[5.043s] byte-compiling /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/python3.12/site-packages/robot_gui/__init__.py to __init__.cpython-312.pyc
+[5.044s] byte-compiling /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/python3.12/site-packages/robot_gui/robot_GUI_display.py to robot_GUI_display.cpython-312.pyc
+[5.046s] running install_data
+[5.046s] copying resource/robot_GUI -> /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/share/ament_index/resource_index/packages
+[5.047s] creating /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/share/robot_GUI
+[5.048s] copying package.xml -> /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/share/robot_GUI
+[5.048s] running install_egg_info
+[5.138s] Copying build/robot_gui/robot_GUI.egg-info to /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/python3.12/site-packages/robot_GUI-0.0.0-py3.12.egg-info
+[5.143s] running install_scripts
+[5.966s] Installing robot_GUI_node script to /home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/robot_GUI
+[5.968s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/install.log'
+[6.135s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/robot_gui' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/src/robot_gui/install/robot_gui/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/robot_gui build --build-base /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/build install --record /home/mgazzola/ros2_spirob_ws/src/robot_gui/build/robot_gui/install.log --single-version-externally-managed install_data

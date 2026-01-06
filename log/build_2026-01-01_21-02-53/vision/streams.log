@@ -1,0 +1,37 @@
+[4.847s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/vision': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision build --build-base /home/mgazzola/ros2_spirob_ws/build/vision/build install --record /home/mgazzola/ros2_spirob_ws/build/vision/install.log --single-version-externally-managed install_data
+[6.104s] running egg_info
+[6.105s] creating ../../build/vision/vision.egg-info
+[6.202s] writing ../../build/vision/vision.egg-info/PKG-INFO
+[6.203s] writing dependency_links to ../../build/vision/vision.egg-info/dependency_links.txt
+[6.204s] writing entry points to ../../build/vision/vision.egg-info/entry_points.txt
+[6.204s] writing requirements to ../../build/vision/vision.egg-info/requires.txt
+[6.205s] writing top-level names to ../../build/vision/vision.egg-info/top_level.txt
+[6.206s] writing manifest file '../../build/vision/vision.egg-info/SOURCES.txt'
+[6.381s] reading manifest file '../../build/vision/vision.egg-info/SOURCES.txt'
+[6.384s] writing manifest file '../../build/vision/vision.egg-info/SOURCES.txt'
+[6.386s] running build
+[6.386s] running build_py
+[6.387s] creating /home/mgazzola/ros2_spirob_ws/build/vision/build
+[6.388s] creating /home/mgazzola/ros2_spirob_ws/build/vision/build/lib
+[6.389s] creating /home/mgazzola/ros2_spirob_ws/build/vision/build/lib/vision
+[6.390s] copying vision/__init__.py -> /home/mgazzola/ros2_spirob_ws/build/vision/build/lib/vision
+[6.391s] copying vision/record_video_node.py -> /home/mgazzola/ros2_spirob_ws/build/vision/build/lib/vision
+[6.391s] running install
+[6.417s] running install_lib
+[6.502s] creating /home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages/vision
+[6.503s] copying /home/mgazzola/ros2_spirob_ws/build/vision/build/lib/vision/__init__.py -> /home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages/vision
+[6.504s] copying /home/mgazzola/ros2_spirob_ws/build/vision/build/lib/vision/record_video_node.py -> /home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages/vision
+[6.506s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages/vision/__init__.py to __init__.cpython-312.pyc
+[6.508s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages/vision/record_video_node.py to record_video_node.cpython-312.pyc
+[6.509s] running install_data
+[6.510s] creating /home/mgazzola/ros2_spirob_ws/install/vision/share/ament_index
+[6.511s] creating /home/mgazzola/ros2_spirob_ws/install/vision/share/ament_index/resource_index
+[6.511s] creating /home/mgazzola/ros2_spirob_ws/install/vision/share/ament_index/resource_index/packages
+[6.512s] copying resource/vision -> /home/mgazzola/ros2_spirob_ws/install/vision/share/ament_index/resource_index/packages
+[6.512s] copying package.xml -> /home/mgazzola/ros2_spirob_ws/install/vision/share/vision
+[6.513s] running install_egg_info
+[6.615s] Copying ../../build/vision/vision.egg-info to /home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages/vision-0.0.0-py3.12.egg-info
+[6.621s] running install_scripts
+[7.293s] Installing record_video_node script to /home/mgazzola/ros2_spirob_ws/install/vision/lib/vision
+[7.295s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/vision/install.log'
+[7.460s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/vision' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision build --build-base /home/mgazzola/ros2_spirob_ws/build/vision/build install --record /home/mgazzola/ros2_spirob_ws/build/vision/install.log --single-version-externally-managed install_data

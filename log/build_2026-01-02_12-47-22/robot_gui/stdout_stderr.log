@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/robot_gui/robot_GUI.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_gui/robot_GUI.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_gui/robot_GUI.egg-info/entry_points.txt
+writing requirements to ../../build/robot_gui/robot_GUI.egg-info/requires.txt
+writing top-level names to ../../build/robot_gui/robot_GUI.egg-info/top_level.txt
+reading manifest file '../../build/robot_gui/robot_GUI.egg-info/SOURCES.txt'
+writing manifest file '../../build/robot_gui/robot_GUI.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui
+copying /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib/robot_gui/robot_GUI_node.py -> /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui
+copying /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib/robot_gui/__init__.py -> /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui
+copying /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib/robot_gui/robot_GUI_display.py -> /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui
+byte-compiling /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui/robot_GUI_node.py to robot_GUI_node.cpython-312.pyc
+byte-compiling /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui/robot_GUI_display.py to robot_GUI_display.cpython-312.pyc
+running install_data
+running install_egg_info
+Copying ../../build/robot_gui/robot_GUI.egg-info to /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_GUI-0.0.0-py3.12.egg-info
+running install_scripts
+Installing robot_GUI_node script to /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/robot_GUI
+writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/robot_gui/install.log'

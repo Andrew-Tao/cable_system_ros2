@@ -1,0 +1,94 @@
+[0.000000] (-) TimerEvent: {}
+[0.001017] (-) JobUnselected: {'identifier': 'controller'}
+[0.001869] (-) JobUnselected: {'identifier': 'joysticker'}
+[0.002407] (-) JobUnselected: {'identifier': 'more_interfaces'}
+[0.002932] (-) JobUnselected: {'identifier': 'motor_driver'}
+[0.003101] (-) JobUnselected: {'identifier': 'robot_GUI'}
+[0.003184] (load_cell) JobQueued: {'identifier': 'load_cell', 'dependencies': OrderedDict()}
+[0.003286] (load_cell) JobStarted: {'identifier': 'load_cell'}
+[0.099177] (-) TimerEvent: {}
+[0.199893] (-) TimerEvent: {}
+[0.300761] (-) TimerEvent: {}
+[0.401381] (-) TimerEvent: {}
+[0.501966] (-) TimerEvent: {}
+[0.602679] (-) TimerEvent: {}
+[0.703312] (-) TimerEvent: {}
+[0.806017] (-) TimerEvent: {}
+[0.906763] (-) TimerEvent: {}
+[1.007462] (-) TimerEvent: {}
+[1.108255] (-) TimerEvent: {}
+[1.208953] (-) TimerEvent: {}
+[1.309666] (-) TimerEvent: {}
+[1.410324] (-) TimerEvent: {}
+[1.510928] (-) TimerEvent: {}
+[1.611619] (-) TimerEvent: {}
+[1.712270] (-) TimerEvent: {}
+[1.812871] (-) TimerEvent: {}
+[1.913508] (-) TimerEvent: {}
+[2.014090] (-) TimerEvent: {}
+[2.114710] (-) TimerEvent: {}
+[2.215312] (-) TimerEvent: {}
+[2.315897] (-) TimerEvent: {}
+[2.416566] (-) TimerEvent: {}
+[2.517522] (-) TimerEvent: {}
+[2.618153] (-) TimerEvent: {}
+[2.718832] (-) TimerEvent: {}
+[2.819464] (-) TimerEvent: {}
+[2.920077] (-) TimerEvent: {}
+[3.020761] (-) TimerEvent: {}
+[3.121450] (-) TimerEvent: {}
+[3.222061] (-) TimerEvent: {}
+[3.322712] (-) TimerEvent: {}
+[3.423442] (-) TimerEvent: {}
+[3.524584] (-) TimerEvent: {}
+[3.614709] (load_cell) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/load_cell', 'build', '--build-base', '/home/mgazzola/ros2_spirob_ws/build/load_cell/build', 'install', '--record', '/home/mgazzola/ros2_spirob_ws/build/load_cell/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mgazzola/ros2_spirob_ws/src/load_cell', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mgazzola', 'SSH_CLIENT': '10.192.126.9 49328 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/lib/aarch64-linux-gnu:/opt/ros/kilted/lib', 'HOME': '/home/mgazzola', 'OLDPWD': '/home/mgazzola', 'SSH_TTY': '/dev/pts/4', 'ROS_PYTHON_VERSION': '3', 'PS1': '(.venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'LC_CTYPE': 'UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', '_colcon_cd_root': '/opt/ros/humble/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mgazzola/ros2_spirob_ws/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'mgazzola', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '28', 'PATH': '/home/mgazzola/ros2_spirob_ws/.venv/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1001', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(.venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/mgazzola/ros2_spirob_ws/install/load_cell:/home/mgazzola/ros2_spirob_ws/install/joysticker:/home/mgazzola/ros2_spirob_ws/install/controller:/opt/ros/kilted', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/mgazzola/ros2_spirob_ws/.venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mgazzola/ros2_spirob_ws/build/load_cell', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.192.126.9 49328 172.16.126.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/build/load_cell:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/build/joysticker:/home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/build/controller:/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1'}, 'shell': False}
+[3.624717] (-) TimerEvent: {}
+[3.725762] (-) TimerEvent: {}
+[3.826382] (-) TimerEvent: {}
+[3.927009] (-) TimerEvent: {}
+[4.027682] (-) TimerEvent: {}
+[4.128350] (-) TimerEvent: {}
+[4.228947] (-) TimerEvent: {}
+[4.329582] (-) TimerEvent: {}
+[4.430193] (-) TimerEvent: {}
+[4.531008] (-) TimerEvent: {}
+[4.631670] (-) TimerEvent: {}
+[4.732293] (-) TimerEvent: {}
+[4.769180] (load_cell) StdoutLine: {'line': b'running egg_info\n'}
+[4.832451] (-) TimerEvent: {}
+[4.846621] (load_cell) StdoutLine: {'line': b'writing ../../build/load_cell/load_cell.egg-info/PKG-INFO\n'}
+[4.847911] (load_cell) StdoutLine: {'line': b'writing dependency_links to ../../build/load_cell/load_cell.egg-info/dependency_links.txt\n'}
+[4.850874] (load_cell) StdoutLine: {'line': b'writing entry points to ../../build/load_cell/load_cell.egg-info/entry_points.txt\n'}
+[4.851830] (load_cell) StdoutLine: {'line': b'writing requirements to ../../build/load_cell/load_cell.egg-info/requires.txt\n'}
+[4.852615] (load_cell) StdoutLine: {'line': b'writing top-level names to ../../build/load_cell/load_cell.egg-info/top_level.txt\n'}
+[4.932619] (-) TimerEvent: {}
+[5.016659] (load_cell) StdoutLine: {'line': b"reading manifest file '../../build/load_cell/load_cell.egg-info/SOURCES.txt'\n"}
+[5.020288] (load_cell) StdoutLine: {'line': b"writing manifest file '../../build/load_cell/load_cell.egg-info/SOURCES.txt'\n"}
+[5.021105] (load_cell) StdoutLine: {'line': b'running build\n'}
+[5.021727] (load_cell) StdoutLine: {'line': b'running build_py\n'}
+[5.022552] (load_cell) StdoutLine: {'line': b'copying load_cell/load_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/build/load_cell/build/lib/load_cell\n'}
+[5.024316] (load_cell) StdoutLine: {'line': b'running install\n'}
+[5.032757] (-) TimerEvent: {}
+[5.049165] (load_cell) StdoutLine: {'line': b'running install_lib\n'}
+[5.129706] (load_cell) StdoutLine: {'line': b'copying /home/mgazzola/ros2_spirob_ws/build/load_cell/build/lib/load_cell/load_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell\n'}
+[5.132895] (-) TimerEvent: {}
+[5.133422] (load_cell) StdoutLine: {'line': b'byte-compiling /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell/load_publisher_node.py to load_publisher_node.cpython-312.pyc\n'}
+[5.136558] (load_cell) StdoutLine: {'line': b'running install_data\n'}
+[5.137328] (load_cell) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.222467] (load_cell) StdoutLine: {'line': b"removing '/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[5.224435] (load_cell) StdoutLine: {'line': b'Copying ../../build/load_cell/load_cell.egg-info to /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell-0.0.0-py3.12.egg-info\n'}
+[5.231133] (load_cell) StdoutLine: {'line': b'running install_scripts\n'}
+[5.233022] (-) TimerEvent: {}
+[5.333663] (-) TimerEvent: {}
+[5.434348] (-) TimerEvent: {}
+[5.534957] (-) TimerEvent: {}
+[5.635586] (-) TimerEvent: {}
+[5.736185] (-) TimerEvent: {}
+[5.836844] (-) TimerEvent: {}
+[5.844027] (load_cell) StdoutLine: {'line': b'Installing load_publisher_node script to /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/load_cell\n'}
+[5.845836] (load_cell) StdoutLine: {'line': b"writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/load_cell/install.log'\n"}
+[5.937098] (-) TimerEvent: {}
+[6.000778] (load_cell) CommandEnded: {'returncode': 0}
+[6.037274] (-) TimerEvent: {}
+[6.050342] (load_cell) JobEnded: {'identifier': 'load_cell', 'rc': 0}
+[6.054343] (-) EventReactorShutdown: {}

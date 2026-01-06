@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/joysticker/joysticker.egg-info/PKG-INFO
+../../build/joysticker/joysticker.egg-info/SOURCES.txt
+../../build/joysticker/joysticker.egg-info/dependency_links.txt
+../../build/joysticker/joysticker.egg-info/entry_points.txt
+../../build/joysticker/joysticker.egg-info/requires.txt
+../../build/joysticker/joysticker.egg-info/top_level.txt
+../../build/joysticker/joysticker.egg-info/zip-safe
+joysticker/__init__.py
+joysticker/joysticker_publisher_node.py
+resource/joysticker
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+test/test_xmllint.py

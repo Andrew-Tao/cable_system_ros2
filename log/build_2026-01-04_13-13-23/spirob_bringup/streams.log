@@ -1,0 +1,19 @@
+[4.511s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/spirob_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/spirob_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spirob_bringup build --build-base /home/mgazzola/ros2_spirob_ws/build/spirob_bringup/build install --record /home/mgazzola/ros2_spirob_ws/build/spirob_bringup/install.log --single-version-externally-managed install_data
+[5.951s] running egg_info
+[6.058s] writing ../../build/spirob_bringup/spirob_bringup.egg-info/PKG-INFO
+[6.058s] writing dependency_links to ../../build/spirob_bringup/spirob_bringup.egg-info/dependency_links.txt
+[6.062s] writing requirements to ../../build/spirob_bringup/spirob_bringup.egg-info/requires.txt
+[6.066s] writing top-level names to ../../build/spirob_bringup/spirob_bringup.egg-info/top_level.txt
+[6.298s] reading manifest file '../../build/spirob_bringup/spirob_bringup.egg-info/SOURCES.txt'
+[6.304s] writing manifest file '../../build/spirob_bringup/spirob_bringup.egg-info/SOURCES.txt'
+[6.305s] running build
+[6.305s] running build_py
+[6.306s] running install
+[6.336s] running install_lib
+[6.446s] running install_data
+[6.447s] running install_egg_info
+[6.566s] removing '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages/spirob_bringup-0.0.0-py3.12.egg-info' (and everything under it)
+[6.572s] Copying ../../build/spirob_bringup/spirob_bringup.egg-info to /home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages/spirob_bringup-0.0.0-py3.12.egg-info
+[6.576s] running install_scripts
+[7.419s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/spirob_bringup/install.log'
+[7.607s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/spirob_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/spirob_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spirob_bringup build --build-base /home/mgazzola/ros2_spirob_ws/build/spirob_bringup/build install --record /home/mgazzola/ros2_spirob_ws/build/spirob_bringup/install.log --single-version-externally-managed install_data

@@ -1,0 +1,5 @@
+  File "/home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages/vision/record_video_node.py", line 1
+    !/usr/bin/env python3
+    ^
+SyntaxError: invalid syntax
+

@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/joysticker/joysticker.egg-info/PKG-INFO
+writing dependency_links to ../../build/joysticker/joysticker.egg-info/dependency_links.txt
+writing entry points to ../../build/joysticker/joysticker.egg-info/entry_points.txt
+writing requirements to ../../build/joysticker/joysticker.egg-info/requires.txt
+writing top-level names to ../../build/joysticker/joysticker.egg-info/top_level.txt
+reading manifest file '../../build/joysticker/joysticker.egg-info/SOURCES.txt'
+writing manifest file '../../build/joysticker/joysticker.egg-info/SOURCES.txt'
+running build
+running build_py
+copying joysticker/joysticker_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/build/joysticker/build/lib/joysticker
+running install
+running install_lib
+copying /home/mgazzola/ros2_spirob_ws/build/joysticker/build/lib/joysticker/joysticker_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages/joysticker
+byte-compiling /home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages/joysticker/joysticker_publisher_node.py to joysticker_publisher_node.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages/joysticker-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/joysticker/joysticker.egg-info to /home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages/joysticker-0.0.0-py3.12.egg-info
+running install_scripts
+Installing joysticker_publisher_node script to /home/mgazzola/ros2_spirob_ws/install/joysticker/lib/joysticker
+writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/joysticker/install.log'

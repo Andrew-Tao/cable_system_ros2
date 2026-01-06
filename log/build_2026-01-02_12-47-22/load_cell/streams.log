@@ -1,0 +1,33 @@
+[7.848s] Invoking command in '/home/mgazzola/ros2_spirob_ws/build/load_cell': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/mgazzola/ros2_spirob_ws/build/load_cell/build
+[9.838s] running develop
+[11.379s] Removing /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load-cell.egg-link (link to .)
+[11.680s] Invoked command in '/home/mgazzola/ros2_spirob_ws/build/load_cell' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/mgazzola/ros2_spirob_ws/build/load_cell/build
+[11.687s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/load_cell': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/load_cell build --build-base /home/mgazzola/ros2_spirob_ws/build/load_cell/build install --record /home/mgazzola/ros2_spirob_ws/build/load_cell/install.log --single-version-externally-managed install_data --force
+[13.395s] running egg_info
+[13.533s] writing ../../build/load_cell/load_cell.egg-info/PKG-INFO
+[13.536s] writing dependency_links to ../../build/load_cell/load_cell.egg-info/dependency_links.txt
+[13.544s] writing entry points to ../../build/load_cell/load_cell.egg-info/entry_points.txt
+[13.548s] writing requirements to ../../build/load_cell/load_cell.egg-info/requires.txt
+[13.551s] writing top-level names to ../../build/load_cell/load_cell.egg-info/top_level.txt
+[13.852s] reading manifest file '../../build/load_cell/load_cell.egg-info/SOURCES.txt'
+[13.856s] writing manifest file '../../build/load_cell/load_cell.egg-info/SOURCES.txt'
+[13.858s] running build
+[13.858s] running build_py
+[13.863s] running install
+[13.893s] running install_lib
+[14.021s] creating /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell
+[14.023s] copying /home/mgazzola/ros2_spirob_ws/build/load_cell/build/lib/load_cell/load_cell.py -> /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell
+[14.027s] copying /home/mgazzola/ros2_spirob_ws/build/load_cell/build/lib/load_cell/__init__.py -> /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell
+[14.029s] copying /home/mgazzola/ros2_spirob_ws/build/load_cell/build/lib/load_cell/load_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell
+[14.041s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell/load_cell.py to load_cell.cpython-312.pyc
+[14.054s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell/__init__.py to __init__.cpython-312.pyc
+[14.058s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell/load_publisher_node.py to load_publisher_node.cpython-312.pyc
+[14.067s] running install_data
+[14.077s] copying resource/load_cell -> /home/mgazzola/ros2_spirob_ws/install/load_cell/share/ament_index/resource_index/packages
+[14.079s] copying package.xml -> /home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell
+[14.087s] running install_egg_info
+[14.445s] Copying ../../build/load_cell/load_cell.egg-info to /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell-0.0.0-py3.12.egg-info
+[14.470s] running install_scripts
+[15.643s] Installing load_publisher_node script to /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/load_cell
+[15.651s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/load_cell/install.log'
+[17.480s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/load_cell' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/load_cell build --build-base /home/mgazzola/ros2_spirob_ws/build/load_cell/build install --record /home/mgazzola/ros2_spirob_ws/build/load_cell/install.log --single-version-externally-managed install_data --force

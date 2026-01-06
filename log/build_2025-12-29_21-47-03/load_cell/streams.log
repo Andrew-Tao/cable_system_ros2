@@ -1,0 +1,27 @@
+[5.156s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/load_cell': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/load_cell build --build-base /home/mgazzola/ros2_spirob_ws/build/load_cell/build install --record /home/mgazzola/ros2_spirob_ws/build/load_cell/install.log --single-version-externally-managed install_data
+[6.745s] running egg_info
+[6.884s] writing ../../build/load_cell/load_cell.egg-info/PKG-INFO
+[6.885s] writing dependency_links to ../../build/load_cell/load_cell.egg-info/dependency_links.txt
+[6.896s] writing entry points to ../../build/load_cell/load_cell.egg-info/entry_points.txt
+[6.898s] writing requirements to ../../build/load_cell/load_cell.egg-info/requires.txt
+[6.899s] writing top-level names to ../../build/load_cell/load_cell.egg-info/top_level.txt
+[7.177s] reading manifest file '../../build/load_cell/load_cell.egg-info/SOURCES.txt'
+[7.184s] writing manifest file '../../build/load_cell/load_cell.egg-info/SOURCES.txt'
+[7.188s] running build
+[7.191s] running build_py
+[7.193s] copying load_cell/load_cell.py -> /home/mgazzola/ros2_spirob_ws/build/load_cell/build/lib/load_cell
+[7.194s] copying load_cell/load_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/build/load_cell/build/lib/load_cell
+[7.196s] running install
+[7.228s] running install_lib
+[7.359s] copying /home/mgazzola/ros2_spirob_ws/build/load_cell/build/lib/load_cell/load_cell.py -> /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell
+[7.361s] copying /home/mgazzola/ros2_spirob_ws/build/load_cell/build/lib/load_cell/load_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell
+[7.364s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell/load_cell.py to load_cell.cpython-312.pyc
+[7.367s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell/load_publisher_node.py to load_publisher_node.cpython-312.pyc
+[7.371s] running install_data
+[7.374s] running install_egg_info
+[7.541s] removing '/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell-0.0.0-py3.12.egg-info' (and everything under it)
+[7.550s] Copying ../../build/load_cell/load_cell.egg-info to /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell-0.0.0-py3.12.egg-info
+[7.563s] running install_scripts
+[8.570s] Installing load_publisher_node script to /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/load_cell
+[8.572s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/load_cell/install.log'
+[8.810s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/load_cell' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/load_cell build --build-base /home/mgazzola/ros2_spirob_ws/build/load_cell/build install --record /home/mgazzola/ros2_spirob_ws/build/load_cell/install.log --single-version-externally-managed install_data

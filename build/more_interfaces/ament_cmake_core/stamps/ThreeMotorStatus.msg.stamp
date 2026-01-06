@@ -1,0 +1,4 @@
+geometry_msgs/Vector3 motor1
+geometry_msgs/Vector3 motor2
+geometry_msgs/Vector3 motor3
+

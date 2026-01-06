@@ -1,0 +1,541 @@
+[0.466s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.466s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff9d5bfc20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9d7a8830>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9d7a8830>>, mixin_verb=('build',))
+[0.638s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.638s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.639s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.639s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.639s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.639s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.639s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mgazzola/ros2_spirob_ws'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.640s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.641s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.745s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extension 'ignore'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extension 'ignore_ament_install'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extensions ['colcon_pkg']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extension 'colcon_pkg'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extensions ['colcon_meta']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extension 'colcon_meta'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extensions ['ros']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extension 'ros'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extensions ['cmake', 'python']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extension 'cmake'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extension 'python'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extensions ['python_setup_py']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws) by extension 'python_setup_py'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extensions ['ignore', 'ignore_ament_install']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extension 'ignore'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extension 'ignore_ament_install'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extensions ['colcon_pkg']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extension 'colcon_pkg'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extensions ['colcon_meta']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extension 'colcon_meta'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extensions ['ros']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extension 'ros'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extensions ['cmake', 'python']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extension 'cmake'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extension 'python'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extensions ['python_setup_py']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/load_only) by extension 'python_setup_py'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extensions ['ignore', 'ignore_ament_install']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extension 'ignore'
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extension 'ignore_ament_install'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extensions ['colcon_pkg']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extension 'colcon_pkg'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extensions ['colcon_meta']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extension 'colcon_meta'
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extensions ['ros']
+[0.754s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extension 'ros'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extensions ['cmake', 'python']
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extension 'cmake'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extension 'python'
+[0.755s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extensions ['python_setup_py']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/recorded_frames) by extension 'python_setup_py'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extensions ['ignore', 'ignore_ament_install']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extension 'ignore'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extension 'ignore_ament_install'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extensions ['colcon_pkg']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extension 'colcon_pkg'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extensions ['colcon_meta']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extension 'colcon_meta'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extensions ['ros']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extension 'ros'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extensions ['cmake', 'python']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extension 'cmake'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extension 'python'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extensions ['python_setup_py']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/rosbag2_2025_12_31-16_29_08) by extension 'python_setup_py'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extension 'ignore'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extension 'ignore_ament_install'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extensions ['colcon_pkg']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extension 'colcon_pkg'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extensions ['colcon_meta']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extension 'colcon_meta'
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extensions ['ros']
+[0.760s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extension 'ros'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extensions ['cmake', 'python']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extension 'cmake'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extension 'python'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extensions ['python_setup_py']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src) by extension 'python_setup_py'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extension 'ignore'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extension 'ignore_ament_install'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extensions ['colcon_pkg']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extension 'colcon_pkg'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extensions ['colcon_meta']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extension 'colcon_meta'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extensions ['ros']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extension 'ros'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extensions ['cmake', 'python']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extension 'cmake'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extension 'python'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extensions ['python_setup_py']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/src/__pycache__) by extension 'python_setup_py'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extensions ['ignore', 'ignore_ament_install']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extension 'ignore'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extension 'ignore_ament_install'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extensions ['colcon_pkg']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extension 'colcon_pkg'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extensions ['colcon_meta']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extension 'colcon_meta'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extensions ['ros']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extension 'ros'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extensions ['cmake', 'python']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extension 'cmake'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extension 'python'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extensions ['python_setup_py']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(exp_ws/test_01) by extension 'python_setup_py'
+[0.768s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extensions ['ignore', 'ignore_ament_install']
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extension 'ignore'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extension 'ignore_ament_install'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extensions ['colcon_pkg']
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extension 'colcon_pkg'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extensions ['colcon_meta']
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extension 'colcon_meta'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extensions ['ros']
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extension 'ros'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extensions ['cmake', 'python']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extension 'cmake'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extension 'python'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extensions ['python_setup_py']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(recorded_frames) by extension 'python_setup_py'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ignore', 'ignore_ament_install']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ignore_ament_install'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_pkg']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_pkg'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['colcon_meta']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'colcon_meta'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extensions ['ros']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/controller) by extension 'ros'
+[0.792s] DEBUG:colcon.colcon_core.package_identification:Package 'src/controller' with type 'ros.ament_python' and name 'controller'
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/joysticker) by extensions ['ignore', 'ignore_ament_install']
+[0.793s] Level 1:colcon.colcon_core.package_identification:_identify(src/joysticker) by extension 'ignore'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/joysticker) by extension 'ignore_ament_install'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/joysticker) by extensions ['colcon_pkg']
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/joysticker) by extension 'colcon_pkg'
+[0.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/joysticker) by extensions ['colcon_meta']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/joysticker) by extension 'colcon_meta'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/joysticker) by extensions ['ros']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/joysticker) by extension 'ros'
+[0.797s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joysticker' with type 'ros.ament_python' and name 'joysticker'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell) by extensions ['ignore', 'ignore_ament_install']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell) by extension 'ignore'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell) by extension 'ignore_ament_install'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell) by extensions ['colcon_pkg']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell) by extension 'colcon_pkg'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell) by extensions ['colcon_meta']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell) by extension 'colcon_meta'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell) by extensions ['ros']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/load_cell) by extension 'ros'
+[0.801s] DEBUG:colcon.colcon_core.package_identification:Package 'src/load_cell' with type 'ros.ament_python' and name 'load_cell'
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver) by extension 'ignore'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver) by extension 'ignore_ament_install'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver) by extensions ['colcon_pkg']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver) by extension 'colcon_pkg'
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver) by extensions ['colcon_meta']
+[0.802s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver) by extension 'colcon_meta'
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver) by extensions ['ros']
+[0.803s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_driver) by extension 'ros'
+[0.805s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_driver' with type 'ros.ament_python' and name 'motor_driver'
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui) by extensions ['ignore', 'ignore_ament_install']
+[0.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui) by extension 'ignore'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui) by extension 'ignore_ament_install'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui) by extensions ['colcon_pkg']
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui) by extension 'colcon_pkg'
+[0.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui) by extensions ['colcon_meta']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui) by extension 'colcon_meta'
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui) by extensions ['ros']
+[0.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_gui) by extension 'ros'
+[0.810s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_gui' with type 'ros.ament_python' and name 'robot_gui'
+[0.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/spirob_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/spirob_bringup) by extension 'ignore'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/spirob_bringup) by extension 'ignore_ament_install'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/spirob_bringup) by extensions ['colcon_pkg']
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/spirob_bringup) by extension 'colcon_pkg'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/spirob_bringup) by extensions ['colcon_meta']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/spirob_bringup) by extension 'colcon_meta'
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/spirob_bringup) by extensions ['ros']
+[0.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/spirob_bringup) by extension 'ros'
+[0.817s] DEBUG:colcon.colcon_core.package_identification:Package 'src/spirob_bringup' with type 'ros.ament_python' and name 'spirob_bringup'
+[0.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['ignore', 'ignore_ament_install']
+[0.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ignore'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ignore_ament_install'
+[0.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['colcon_pkg']
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'colcon_pkg'
+[0.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['colcon_meta']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'colcon_meta'
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['ros']
+[0.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ros'
+[0.825s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision' with type 'ros.ament_python' and name 'vision'
+[0.825s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.827s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.932s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.933s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.949s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/mgazzola/ros2_spirob_ws/install
+[0.958s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 197 installed packages in /opt/ros/kilted
+[0.962s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_args' from command line to 'None'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target' from command line to 'None'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.246s] Level 5:colcon.colcon_core.verb:set package 'controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.246s] DEBUG:colcon.colcon_core.verb:Building package 'controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mgazzola/ros2_spirob_ws/build/controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mgazzola/ros2_spirob_ws/install/controller', 'merge_install': False, 'path': '/home/mgazzola/ros2_spirob_ws/src/controller', 'symlink_install': False, 'test_result_base': None}
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'joysticker' build argument 'cmake_args' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'joysticker' build argument 'cmake_target' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'joysticker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'joysticker' build argument 'cmake_clean_cache' from command line to 'False'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'joysticker' build argument 'cmake_clean_first' from command line to 'False'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'joysticker' build argument 'cmake_force_configure' from command line to 'False'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'joysticker' build argument 'ament_cmake_args' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'joysticker' build argument 'catkin_cmake_args' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'joysticker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.248s] DEBUG:colcon.colcon_core.verb:Building package 'joysticker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mgazzola/ros2_spirob_ws/build/joysticker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mgazzola/ros2_spirob_ws/install/joysticker', 'merge_install': False, 'path': '/home/mgazzola/ros2_spirob_ws/src/joysticker', 'symlink_install': False, 'test_result_base': None}
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'load_cell' build argument 'cmake_args' from command line to 'None'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'load_cell' build argument 'cmake_target' from command line to 'None'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'load_cell' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'load_cell' build argument 'cmake_clean_cache' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'load_cell' build argument 'cmake_clean_first' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'load_cell' build argument 'cmake_force_configure' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'load_cell' build argument 'ament_cmake_args' from command line to 'None'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'load_cell' build argument 'catkin_cmake_args' from command line to 'None'
+[1.251s] Level 5:colcon.colcon_core.verb:set package 'load_cell' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.251s] DEBUG:colcon.colcon_core.verb:Building package 'load_cell' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mgazzola/ros2_spirob_ws/build/load_cell', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mgazzola/ros2_spirob_ws/install/load_cell', 'merge_install': False, 'path': '/home/mgazzola/ros2_spirob_ws/src/load_cell', 'symlink_install': False, 'test_result_base': None}
+[1.252s] Level 5:colcon.colcon_core.verb:set package 'motor_driver' build argument 'cmake_args' from command line to 'None'
+[1.252s] Level 5:colcon.colcon_core.verb:set package 'motor_driver' build argument 'cmake_target' from command line to 'None'
+[1.252s] Level 5:colcon.colcon_core.verb:set package 'motor_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.252s] Level 5:colcon.colcon_core.verb:set package 'motor_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.252s] Level 5:colcon.colcon_core.verb:set package 'motor_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.252s] Level 5:colcon.colcon_core.verb:set package 'motor_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.253s] Level 5:colcon.colcon_core.verb:set package 'motor_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.253s] Level 5:colcon.colcon_core.verb:set package 'motor_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.253s] Level 5:colcon.colcon_core.verb:set package 'motor_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.253s] DEBUG:colcon.colcon_core.verb:Building package 'motor_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mgazzola/ros2_spirob_ws/build/motor_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mgazzola/ros2_spirob_ws/install/motor_driver', 'merge_install': False, 'path': '/home/mgazzola/ros2_spirob_ws/src/motor_driver', 'symlink_install': False, 'test_result_base': None}
+[1.254s] Level 5:colcon.colcon_core.verb:set package 'robot_gui' build argument 'cmake_args' from command line to 'None'
+[1.254s] Level 5:colcon.colcon_core.verb:set package 'robot_gui' build argument 'cmake_target' from command line to 'None'
+[1.254s] Level 5:colcon.colcon_core.verb:set package 'robot_gui' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.254s] Level 5:colcon.colcon_core.verb:set package 'robot_gui' build argument 'cmake_clean_cache' from command line to 'False'
+[1.255s] Level 5:colcon.colcon_core.verb:set package 'robot_gui' build argument 'cmake_clean_first' from command line to 'False'
+[1.255s] Level 5:colcon.colcon_core.verb:set package 'robot_gui' build argument 'cmake_force_configure' from command line to 'False'
+[1.255s] Level 5:colcon.colcon_core.verb:set package 'robot_gui' build argument 'ament_cmake_args' from command line to 'None'
+[1.255s] Level 5:colcon.colcon_core.verb:set package 'robot_gui' build argument 'catkin_cmake_args' from command line to 'None'
+[1.255s] Level 5:colcon.colcon_core.verb:set package 'robot_gui' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.255s] DEBUG:colcon.colcon_core.verb:Building package 'robot_gui' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mgazzola/ros2_spirob_ws/build/robot_gui', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mgazzola/ros2_spirob_ws/install/robot_gui', 'merge_install': False, 'path': '/home/mgazzola/ros2_spirob_ws/src/robot_gui', 'symlink_install': False, 'test_result_base': None}
+[1.256s] Level 5:colcon.colcon_core.verb:set package 'spirob_bringup' build argument 'cmake_args' from command line to 'None'
+[1.256s] Level 5:colcon.colcon_core.verb:set package 'spirob_bringup' build argument 'cmake_target' from command line to 'None'
+[1.257s] Level 5:colcon.colcon_core.verb:set package 'spirob_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.257s] Level 5:colcon.colcon_core.verb:set package 'spirob_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[1.257s] Level 5:colcon.colcon_core.verb:set package 'spirob_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[1.257s] Level 5:colcon.colcon_core.verb:set package 'spirob_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[1.257s] Level 5:colcon.colcon_core.verb:set package 'spirob_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[1.257s] Level 5:colcon.colcon_core.verb:set package 'spirob_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[1.257s] Level 5:colcon.colcon_core.verb:set package 'spirob_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.257s] DEBUG:colcon.colcon_core.verb:Building package 'spirob_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mgazzola/ros2_spirob_ws/build/spirob_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup', 'merge_install': False, 'path': '/home/mgazzola/ros2_spirob_ws/src/spirob_bringup', 'symlink_install': False, 'test_result_base': None}
+[1.258s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_args' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_target' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_clean_cache' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_clean_first' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'cmake_force_configure' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'ament_cmake_args' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'catkin_cmake_args' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.259s] DEBUG:colcon.colcon_core.verb:Building package 'vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mgazzola/ros2_spirob_ws/build/vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mgazzola/ros2_spirob_ws/install/vision', 'merge_install': False, 'path': '/home/mgazzola/ros2_spirob_ws/src/vision', 'symlink_install': False, 'test_result_base': None}
+[1.260s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.263s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.264s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mgazzola/ros2_spirob_ws/src/controller' with build type 'ament_python'
+[1.265s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'ament_prefix_path')
+[1.274s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/hook/ament_prefix_path.ps1'
+[1.278s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/hook/ament_prefix_path.dsv'
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/hook/ament_prefix_path.sh'
+[1.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.284s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.303s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mgazzola/ros2_spirob_ws/src/joysticker' with build type 'ament_python'
+[1.303s] Level 1:colcon.colcon_core.shell:create_environment_hook('joysticker', 'ament_prefix_path')
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/hook/ament_prefix_path.ps1'
+[1.307s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/hook/ament_prefix_path.dsv'
+[1.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/hook/ament_prefix_path.sh'
+[1.312s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.312s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.331s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mgazzola/ros2_spirob_ws/src/load_cell' with build type 'ament_python'
+[1.332s] Level 1:colcon.colcon_core.shell:create_environment_hook('load_cell', 'ament_prefix_path')
+[1.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/hook/ament_prefix_path.ps1'
+[1.335s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/hook/ament_prefix_path.dsv'
+[1.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/hook/ament_prefix_path.sh'
+[1.340s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.341s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.359s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mgazzola/ros2_spirob_ws/src/motor_driver' with build type 'ament_python'
+[1.360s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_driver', 'ament_prefix_path')
+[1.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/hook/ament_prefix_path.ps1'
+[1.364s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/hook/ament_prefix_path.dsv'
+[1.366s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/hook/ament_prefix_path.sh'
+[1.369s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.369s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.490s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mgazzola/ros2_spirob_ws/src/controller'
+[2.491s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.491s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.456s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mgazzola/ros2_spirob_ws/src/joysticker'
+[3.457s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.457s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.419s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mgazzola/ros2_spirob_ws/src/load_cell'
+[4.420s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.420s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.412s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mgazzola/ros2_spirob_ws/src/motor_driver'
+[5.413s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.413s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.443s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mgazzola/ros2_spirob_ws/src/motor_driver': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/motor_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_driver build --build-base /home/mgazzola/ros2_spirob_ws/build/motor_driver/build install --record /home/mgazzola/ros2_spirob_ws/build/motor_driver/install.log --single-version-externally-managed install_data
+[9.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mgazzola/ros2_spirob_ws/src/controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/mgazzola/ros2_spirob_ws/build/controller/build install --record /home/mgazzola/ros2_spirob_ws/build/controller/install.log --single-version-externally-managed install_data
+[9.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mgazzola/ros2_spirob_ws/src/joysticker': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/joysticker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joysticker build --build-base /home/mgazzola/ros2_spirob_ws/build/joysticker/build install --record /home/mgazzola/ros2_spirob_ws/build/joysticker/install.log --single-version-externally-managed install_data
+[9.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mgazzola/ros2_spirob_ws/src/load_cell': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/load_cell build --build-base /home/mgazzola/ros2_spirob_ws/build/load_cell/build install --record /home/mgazzola/ros2_spirob_ws/build/load_cell/install.log --single-version-externally-managed install_data
+[13.688s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mgazzola/ros2_spirob_ws/src/joysticker' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/joysticker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joysticker build --build-base /home/mgazzola/ros2_spirob_ws/build/joysticker/build install --record /home/mgazzola/ros2_spirob_ws/build/joysticker/install.log --single-version-externally-managed install_data
+[13.703s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/joysticker' for CMake module files
+[13.706s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/joysticker' for CMake config files
+[13.711s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/joysticker/lib'
+[13.712s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/joysticker/bin'
+[13.713s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/joysticker/lib/pkgconfig/joysticker.pc'
+[13.715s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages'
+[13.716s] Level 1:colcon.colcon_core.shell:create_environment_hook('joysticker', 'pythonpath')
+[13.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/hook/pythonpath.ps1'
+[13.722s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/hook/pythonpath.dsv'
+[13.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/hook/pythonpath.sh'
+[13.731s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/joysticker/bin'
+[13.733s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joysticker)
+[13.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/package.ps1'
+[13.741s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/package.dsv'
+[13.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/package.sh'
+[13.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/package.bash'
+[13.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/joysticker/share/joysticker/package.zsh'
+[13.764s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mgazzola/ros2_spirob_ws/install/joysticker/share/colcon-core/packages/joysticker)
+[13.768s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mgazzola/ros2_spirob_ws/src/robot_gui' with build type 'ament_python'
+[13.772s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_gui', 'ament_prefix_path')
+[13.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/hook/ament_prefix_path.ps1'
+[13.785s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/hook/ament_prefix_path.dsv'
+[13.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/hook/ament_prefix_path.sh'
+[13.802s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.806s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.624s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'robot_gui' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[15.625s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'robot_gui' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[15.627s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mgazzola/ros2_spirob_ws/src/robot_gui'
+[15.627s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.628s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.651s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/controller' for CMake module files
+[15.653s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mgazzola/ros2_spirob_ws/src/controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/mgazzola/ros2_spirob_ws/build/controller/build install --record /home/mgazzola/ros2_spirob_ws/build/controller/install.log --single-version-externally-managed install_data
+[15.656s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/controller' for CMake config files
+[15.660s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/controller/lib'
+[15.661s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/controller/bin'
+[15.661s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/controller/lib/pkgconfig/controller.pc'
+[15.662s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages'
+[15.663s] Level 1:colcon.colcon_core.shell:create_environment_hook('controller', 'pythonpath')
+[15.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/hook/pythonpath.ps1'
+[15.665s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/hook/pythonpath.dsv'
+[15.668s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/hook/pythonpath.sh'
+[15.672s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/controller/bin'
+[15.672s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(controller)
+[15.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/package.ps1'
+[15.676s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/package.dsv'
+[15.678s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/package.sh'
+[15.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/package.bash'
+[15.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/controller/share/controller/package.zsh'
+[15.684s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mgazzola/ros2_spirob_ws/install/controller/share/colcon-core/packages/controller)
+[15.686s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/motor_driver' for CMake module files
+[15.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mgazzola/ros2_spirob_ws/src/motor_driver' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/motor_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_driver build --build-base /home/mgazzola/ros2_spirob_ws/build/motor_driver/build install --record /home/mgazzola/ros2_spirob_ws/build/motor_driver/install.log --single-version-externally-managed install_data
+[15.692s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/motor_driver' for CMake config files
+[15.696s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib'
+[15.696s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/motor_driver/bin'
+[15.697s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/pkgconfig/motor_driver.pc'
+[15.698s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages'
+[15.698s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_driver', 'pythonpath')
+[15.699s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/hook/pythonpath.ps1'
+[15.701s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/hook/pythonpath.dsv'
+[15.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/hook/pythonpath.sh'
+[15.708s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/motor_driver/bin'
+[15.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_driver)
+[15.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/package.ps1'
+[15.713s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/package.dsv'
+[15.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/package.sh'
+[15.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/package.bash'
+[15.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver/package.zsh'
+[15.722s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mgazzola/ros2_spirob_ws/install/motor_driver/share/colcon-core/packages/motor_driver)
+[15.724s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/load_cell' for CMake module files
+[15.728s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mgazzola/ros2_spirob_ws/src/load_cell' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/load_cell build --build-base /home/mgazzola/ros2_spirob_ws/build/load_cell/build install --record /home/mgazzola/ros2_spirob_ws/build/load_cell/install.log --single-version-externally-managed install_data
+[15.729s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/load_cell' for CMake config files
+[15.733s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/load_cell/lib'
+[15.734s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/load_cell/bin'
+[15.734s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/pkgconfig/load_cell.pc'
+[15.735s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages'
+[15.736s] Level 1:colcon.colcon_core.shell:create_environment_hook('load_cell', 'pythonpath')
+[15.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/hook/pythonpath.ps1'
+[15.740s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/hook/pythonpath.dsv'
+[15.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/hook/pythonpath.sh'
+[15.746s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/load_cell/bin'
+[15.746s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(load_cell)
+[15.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/package.ps1'
+[15.749s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/package.dsv'
+[15.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/package.sh'
+[15.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/package.bash'
+[15.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/load_cell/share/load_cell/package.zsh'
+[15.758s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mgazzola/ros2_spirob_ws/install/load_cell/share/colcon-core/packages/load_cell)
+[15.761s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mgazzola/ros2_spirob_ws/src/spirob_bringup' with build type 'ament_python'
+[15.761s] Level 1:colcon.colcon_core.shell:create_environment_hook('spirob_bringup', 'ament_prefix_path')
+[15.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/hook/ament_prefix_path.ps1'
+[15.765s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/hook/ament_prefix_path.dsv'
+[15.767s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/hook/ament_prefix_path.sh'
+[15.770s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.770s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.789s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mgazzola/ros2_spirob_ws/src/vision' with build type 'ament_python'
+[15.790s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision', 'ament_prefix_path')
+[15.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/hook/ament_prefix_path.ps1'
+[15.793s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/hook/ament_prefix_path.dsv'
+[15.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/hook/ament_prefix_path.sh'
+[15.798s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.799s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[17.113s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mgazzola/ros2_spirob_ws/src/spirob_bringup'
+[17.113s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[17.114s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[18.394s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mgazzola/ros2_spirob_ws/src/vision'
+[18.396s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[18.397s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[20.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mgazzola/ros2_spirob_ws/src/robot_gui': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/robot_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_gui build --build-base /home/mgazzola/ros2_spirob_ws/build/robot_gui/build install --record /home/mgazzola/ros2_spirob_ws/build/robot_gui/install.log --single-version-externally-managed install_data
+[22.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mgazzola/ros2_spirob_ws/src/spirob_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/spirob_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spirob_bringup build --build-base /home/mgazzola/ros2_spirob_ws/build/spirob_bringup/build install --record /home/mgazzola/ros2_spirob_ws/build/spirob_bringup/install.log --single-version-externally-managed install_data
+[23.791s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mgazzola/ros2_spirob_ws/src/vision': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision build --build-base /home/mgazzola/ros2_spirob_ws/build/vision/build install --record /home/mgazzola/ros2_spirob_ws/build/vision/install.log --single-version-externally-managed install_data
+[24.340s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/robot_gui' for CMake module files
+[24.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mgazzola/ros2_spirob_ws/src/robot_gui' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/robot_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_gui build --build-base /home/mgazzola/ros2_spirob_ws/build/robot_gui/build install --record /home/mgazzola/ros2_spirob_ws/build/robot_gui/install.log --single-version-externally-managed install_data
+[24.345s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/robot_gui' for CMake config files
+[24.350s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/robot_gui/lib'
+[24.351s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/robot_gui/bin'
+[24.352s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/pkgconfig/robot_gui.pc'
+[24.354s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages'
+[24.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_gui', 'pythonpath')
+[24.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/hook/pythonpath.ps1'
+[24.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/hook/pythonpath.dsv'
+[24.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/hook/pythonpath.sh'
+[24.372s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/robot_gui/bin'
+[24.373s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_gui)
+[24.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/package.ps1'
+[24.379s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/package.dsv'
+[24.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/package.sh'
+[24.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/package.bash'
+[24.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_gui/package.zsh'
+[24.396s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mgazzola/ros2_spirob_ws/install/robot_gui/share/colcon-core/packages/robot_gui)
+[26.709s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup' for CMake module files
+[26.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mgazzola/ros2_spirob_ws/src/spirob_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/spirob_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/spirob_bringup build --build-base /home/mgazzola/ros2_spirob_ws/build/spirob_bringup/build install --record /home/mgazzola/ros2_spirob_ws/build/spirob_bringup/install.log --single-version-externally-managed install_data
+[26.714s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup' for CMake config files
+[26.717s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib'
+[26.718s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/bin'
+[26.718s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/pkgconfig/spirob_bringup.pc'
+[26.719s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages'
+[26.720s] Level 1:colcon.colcon_core.shell:create_environment_hook('spirob_bringup', 'pythonpath')
+[26.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/hook/pythonpath.ps1'
+[26.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/hook/pythonpath.dsv'
+[26.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/hook/pythonpath.sh'
+[26.730s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/bin'
+[26.731s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spirob_bringup)
+[26.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/package.ps1'
+[26.734s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/package.dsv'
+[26.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/package.sh'
+[26.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/package.bash'
+[26.741s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/package.zsh'
+[26.743s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/colcon-core/packages/spirob_bringup)
+[27.504s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/vision' for CMake module files
+[27.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mgazzola/ros2_spirob_ws/src/vision' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vision build --build-base /home/mgazzola/ros2_spirob_ws/build/vision/build install --record /home/mgazzola/ros2_spirob_ws/build/vision/install.log --single-version-externally-managed install_data
+[27.507s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/vision' for CMake config files
+[27.511s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/vision/lib'
+[27.511s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/vision/bin'
+[27.512s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/vision/lib/pkgconfig/vision.pc'
+[27.513s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages'
+[27.513s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision', 'pythonpath')
+[27.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/hook/pythonpath.ps1'
+[27.517s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/hook/pythonpath.dsv'
+[27.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/hook/pythonpath.sh'
+[27.524s] Level 1:colcon.colcon_core.environment:checking '/home/mgazzola/ros2_spirob_ws/install/vision/bin'
+[27.524s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision)
+[27.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/package.ps1'
+[27.528s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/package.dsv'
+[27.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/package.sh'
+[27.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/package.bash'
+[27.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/mgazzola/ros2_spirob_ws/install/vision/share/vision/package.zsh'
+[27.537s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mgazzola/ros2_spirob_ws/install/vision/share/colcon-core/packages/vision)
+[27.538s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[27.539s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[27.540s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[27.540s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[27.563s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[27.564s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[27.564s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[27.602s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[27.604s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mgazzola/ros2_spirob_ws/install/local_setup.ps1'
+[27.609s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mgazzola/ros2_spirob_ws/install/_local_setup_util_ps1.py'
+[27.614s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mgazzola/ros2_spirob_ws/install/setup.ps1'
+[27.620s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mgazzola/ros2_spirob_ws/install/local_setup.sh'
+[27.624s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mgazzola/ros2_spirob_ws/install/_local_setup_util_sh.py'
+[27.627s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mgazzola/ros2_spirob_ws/install/setup.sh'
+[27.632s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mgazzola/ros2_spirob_ws/install/local_setup.bash'
+[27.637s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mgazzola/ros2_spirob_ws/install/setup.bash'
+[27.642s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mgazzola/ros2_spirob_ws/install/local_setup.zsh'
+[27.644s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mgazzola/ros2_spirob_ws/install/setup.zsh'

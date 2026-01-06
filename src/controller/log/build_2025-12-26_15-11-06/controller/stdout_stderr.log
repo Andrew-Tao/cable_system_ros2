@@ -1,0 +1,83 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1949, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 102, in build
+    return await extension.build(additional_hooks=additional_hooks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 96, in build
+    available_commands = await self._get_available_commands(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 194, in _get_available_commands
+    output = await check_output(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 129, in check_output
+    assert not rc, f'Expected {args} to pass: {stderr_data}'
+           ^^^^^^
+AssertionError: Expected ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', '--help-commands'] to pass: Traceback (most recent call last):
+  File "/home/mgazzola/ros2_spirob_ws/src/controller/setup.py", line 1, in <module>
+    from setuptools import find_packages, setup
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 17, in <module>
+    from setuptools.dist import Distribution
+  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 37, in <module>
+    from setuptools.config import setupcfg, pyprojecttoml
+  File "/usr/lib/python3/dist-packages/setuptools/config/__init__.py", line 8, in <module>
+    from . import setupcfg
+  File "/usr/lib/python3/dist-packages/setuptools/config/setupcfg.py", line 33, in <module>
+    from ..extern.packaging.markers import default_environment as marker_env
+  File "/usr/lib/python3/dist-packages/setuptools/_vendor/packaging/markers.py", line 11, in <module>
+    from ._parser import (
+  File "/usr/lib/python3/dist-packages/setuptools/_vendor/packaging/_parser.py", line 10, in <module>
+    from ._tokenizer import DEFAULT_RULES, Tokenizer
+  File "/usr/lib/python3/dist-packages/setuptools/_vendor/packaging/_tokenizer.py", line 6, in <module>
+    from .specifiers import Specifier
+  File "/usr/lib/python3/dist-packages/setuptools/_vendor/packaging/specifiers.py", line 52, in <module>
+    class BaseSpecifier(metaclass=abc.ABCMeta):
+  File "/usr/lib/python3/dist-packages/setuptools/_vendor/packaging/specifiers.py", line 77, in BaseSpecifier
+    def prereleases(self) -> Optional[bool]:
+                             ~~~~~~~~^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 395, in inner
+    return _caches[func](*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 510, in __getitem__
+    return self._getitem(self, parameters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 744, in Optional
+    return Union[arg, type(None)]
+           ~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 395, in inner
+    return _caches[func](*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 510, in __getitem__
+    return self._getitem(self, parameters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 728, in Union
+    return _UnionGenericAlias(self, parameters, name="Optional")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 1243, in __init__
+    super().__init__(origin, inst=inst, name=name)
+  File "/usr/lib/python3.12/typing.py", line 1147, in __init__
+    def __init__(self, origin, *, inst=True, name=None):
+
+KeyboardInterrupt
+

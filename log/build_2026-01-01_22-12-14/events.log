@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.001069] (-) JobUnselected: {'identifier': 'controller'}
+[0.001312] (-) JobUnselected: {'identifier': 'joysticker'}
+[0.001416] (-) JobUnselected: {'identifier': 'load_cell'}
+[0.001489] (-) JobUnselected: {'identifier': 'motor_driver'}
+[0.001560] (-) JobUnselected: {'identifier': 'robot_GUI'}
+[0.001660] (-) JobUnselected: {'identifier': 'vision'}
+[0.004307] (-) EventReactorShutdown: {}

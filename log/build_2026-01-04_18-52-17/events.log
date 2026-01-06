@@ -1,0 +1,101 @@
+[0.000000] (-) TimerEvent: {}
+[0.000988] (-) JobUnselected: {'identifier': 'controller'}
+[0.001813] (-) JobUnselected: {'identifier': 'joysticker'}
+[0.002377] (-) JobUnselected: {'identifier': 'load_cell'}
+[0.002457] (-) JobUnselected: {'identifier': 'motor_driver'}
+[0.002530] (-) JobUnselected: {'identifier': 'robot_gui'}
+[0.002598] (-) JobUnselected: {'identifier': 'vision'}
+[0.002674] (spirob_bringup) JobQueued: {'identifier': 'spirob_bringup', 'dependencies': OrderedDict()}
+[0.002752] (spirob_bringup) JobStarted: {'identifier': 'spirob_bringup'}
+[0.099147] (-) TimerEvent: {}
+[0.199803] (-) TimerEvent: {}
+[0.300511] (-) TimerEvent: {}
+[0.401298] (-) TimerEvent: {}
+[0.501938] (-) TimerEvent: {}
+[0.602548] (-) TimerEvent: {}
+[0.703209] (-) TimerEvent: {}
+[0.803900] (-) TimerEvent: {}
+[0.904490] (-) TimerEvent: {}
+[1.005261] (-) TimerEvent: {}
+[1.107247] (-) TimerEvent: {}
+[1.207905] (-) TimerEvent: {}
+[1.308554] (-) TimerEvent: {}
+[1.409444] (-) TimerEvent: {}
+[1.510137] (-) TimerEvent: {}
+[1.610815] (-) TimerEvent: {}
+[1.711588] (-) TimerEvent: {}
+[1.812433] (-) TimerEvent: {}
+[1.913102] (-) TimerEvent: {}
+[2.013700] (-) TimerEvent: {}
+[2.114358] (-) TimerEvent: {}
+[2.215040] (-) TimerEvent: {}
+[2.316151] (-) TimerEvent: {}
+[2.416972] (-) TimerEvent: {}
+[2.517690] (-) TimerEvent: {}
+[2.618457] (-) TimerEvent: {}
+[2.719283] (-) TimerEvent: {}
+[2.819927] (-) TimerEvent: {}
+[2.920566] (-) TimerEvent: {}
+[3.021276] (-) TimerEvent: {}
+[3.121940] (-) TimerEvent: {}
+[3.222567] (-) TimerEvent: {}
+[3.323315] (-) TimerEvent: {}
+[3.423941] (-) TimerEvent: {}
+[3.524580] (-) TimerEvent: {}
+[3.625308] (-) TimerEvent: {}
+[3.725950] (-) TimerEvent: {}
+[3.826561] (-) TimerEvent: {}
+[3.927225] (-) TimerEvent: {}
+[4.027818] (-) TimerEvent: {}
+[4.128473] (-) TimerEvent: {}
+[4.229207] (-) TimerEvent: {}
+[4.330030] (-) TimerEvent: {}
+[4.431124] (-) TimerEvent: {}
+[4.531308] (spirob_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/spirob_bringup', 'build', '--build-base', '/home/mgazzola/ros2_spirob_ws/build/spirob_bringup/build', 'install', '--record', '/home/mgazzola/ros2_spirob_ws/build/spirob_bringup/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mgazzola/ros2_spirob_ws/src/spirob_bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mgazzola', 'SSH_CLIENT': '10.192.126.9 63114 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/kilted/opt/zenoh_cpp_vendor/lib:/opt/ros/kilted/lib/aarch64-linux-gnu:/opt/ros/kilted/lib', 'HOME': '/home/mgazzola', 'OLDPWD': '/home/mgazzola', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'PS1': '(.venv) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'LC_CTYPE': 'UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', '_colcon_cd_root': '/opt/ros/humble/', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/mgazzola/ros2_spirob_ws/install', 'ROS_DISTRO': 'kilted', 'LOGNAME': 'mgazzola', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'PATH': '/home/mgazzola/ros2_spirob_ws/.venv/bin:/opt/ros/kilted/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1001', 'LANG': 'en_US.UTF-8', 'VIRTUAL_ENV_PROMPT': '(.venv)', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/mgazzola/ros2_spirob_ws/install/vision:/home/mgazzola/ros2_spirob_ws/install/spirob_bringup:/home/mgazzola/ros2_spirob_ws/install/robot_gui:/home/mgazzola/ros2_spirob_ws/install/robot_GUI:/home/mgazzola/ros2_spirob_ws/install/motor_driver:/home/mgazzola/ros2_spirob_ws/install/load_cell:/home/mgazzola/ros2_spirob_ws/install/joysticker:/home/mgazzola/ros2_spirob_ws/install/controller:/opt/ros/kilted', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/mgazzola/ros2_spirob_ws/.venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mgazzola/ros2_spirob_ws/build/spirob_bringup', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '10.192.126.9 63114 172.16.126.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mgazzola/ros2_spirob_ws/build/spirob_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/install/vision/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/install/robot_GUI/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages:/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages:/opt/ros/kilted/lib/python3.12/site-packages', 'COLCON': '1'}, 'shell': False}
+[4.536494] (-) TimerEvent: {}
+[4.637143] (-) TimerEvent: {}
+[4.737905] (-) TimerEvent: {}
+[4.838632] (-) TimerEvent: {}
+[4.939376] (-) TimerEvent: {}
+[5.039971] (-) TimerEvent: {}
+[5.140605] (-) TimerEvent: {}
+[5.241330] (-) TimerEvent: {}
+[5.341944] (-) TimerEvent: {}
+[5.442523] (-) TimerEvent: {}
+[5.543157] (-) TimerEvent: {}
+[5.643768] (-) TimerEvent: {}
+[5.738404] (spirob_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[5.743912] (-) TimerEvent: {}
+[5.819388] (spirob_bringup) StdoutLine: {'line': b'writing ../../build/spirob_bringup/spirob_bringup.egg-info/PKG-INFO\n'}
+[5.820655] (spirob_bringup) StdoutLine: {'line': b'writing dependency_links to ../../build/spirob_bringup/spirob_bringup.egg-info/dependency_links.txt\n'}
+[5.824397] (spirob_bringup) StdoutLine: {'line': b'writing requirements to ../../build/spirob_bringup/spirob_bringup.egg-info/requires.txt\n'}
+[5.826066] (spirob_bringup) StdoutLine: {'line': b'writing top-level names to ../../build/spirob_bringup/spirob_bringup.egg-info/top_level.txt\n'}
+[5.844052] (-) TimerEvent: {}
+[5.944659] (-) TimerEvent: {}
+[5.994191] (spirob_bringup) StdoutLine: {'line': b"reading manifest file '../../build/spirob_bringup/spirob_bringup.egg-info/SOURCES.txt'\n"}
+[6.002699] (spirob_bringup) StdoutLine: {'line': b"writing manifest file '../../build/spirob_bringup/spirob_bringup.egg-info/SOURCES.txt'\n"}
+[6.003982] (spirob_bringup) StdoutLine: {'line': b'running build\n'}
+[6.004902] (spirob_bringup) StdoutLine: {'line': b'running build_py\n'}
+[6.005887] (spirob_bringup) StdoutLine: {'line': b'running install\n'}
+[6.031766] (spirob_bringup) StdoutLine: {'line': b'running install_lib\n'}
+[6.044809] (-) TimerEvent: {}
+[6.120274] (spirob_bringup) StdoutLine: {'line': b'running install_data\n'}
+[6.121561] (spirob_bringup) StdoutLine: {'line': b'copying launch/spirob.launch.py -> /home/mgazzola/ros2_spirob_ws/install/spirob_bringup/share/spirob_bringup/launch\n'}
+[6.122738] (spirob_bringup) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.144966] (-) TimerEvent: {}
+[6.216746] (spirob_bringup) StdoutLine: {'line': b"removing '/home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages/spirob_bringup-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[6.218705] (spirob_bringup) StdoutLine: {'line': b'Copying ../../build/spirob_bringup/spirob_bringup.egg-info to /home/mgazzola/ros2_spirob_ws/install/spirob_bringup/lib/python3.12/site-packages/spirob_bringup-0.0.0-py3.12.egg-info\n'}
+[6.235715] (spirob_bringup) StdoutLine: {'line': b'running install_scripts\n'}
+[6.245102] (-) TimerEvent: {}
+[6.345790] (-) TimerEvent: {}
+[6.446485] (-) TimerEvent: {}
+[6.547104] (-) TimerEvent: {}
+[6.647722] (-) TimerEvent: {}
+[6.748438] (-) TimerEvent: {}
+[6.849168] (-) TimerEvent: {}
+[6.886696] (spirob_bringup) StdoutLine: {'line': b"writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/spirob_bringup/install.log'\n"}
+[6.949415] (-) TimerEvent: {}
+[7.039338] (spirob_bringup) CommandEnded: {'returncode': 0}
+[7.049542] (-) TimerEvent: {}
+[7.113120] (spirob_bringup) JobEnded: {'identifier': 'spirob_bringup', 'rc': 0}
+[7.116608] (-) EventReactorShutdown: {}

@@ -1,0 +1,37 @@
+[5.874s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/robot_gui': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/robot_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_gui build --build-base /home/mgazzola/ros2_spirob_ws/build/robot_gui/build install --record /home/mgazzola/ros2_spirob_ws/build/robot_gui/install.log --single-version-externally-managed install_data
+[7.507s] running egg_info
+[7.511s] creating ../../build/robot_gui/robot_GUI.egg-info
+[7.673s] writing ../../build/robot_gui/robot_GUI.egg-info/PKG-INFO
+[7.678s] writing dependency_links to ../../build/robot_gui/robot_GUI.egg-info/dependency_links.txt
+[7.682s] writing entry points to ../../build/robot_gui/robot_GUI.egg-info/entry_points.txt
+[7.683s] writing requirements to ../../build/robot_gui/robot_GUI.egg-info/requires.txt
+[7.688s] writing top-level names to ../../build/robot_gui/robot_GUI.egg-info/top_level.txt
+[7.691s] writing manifest file '../../build/robot_gui/robot_GUI.egg-info/SOURCES.txt'
+[7.934s] reading manifest file '../../build/robot_gui/robot_GUI.egg-info/SOURCES.txt'
+[7.942s] writing manifest file '../../build/robot_gui/robot_GUI.egg-info/SOURCES.txt'
+[7.945s] running build
+[7.950s] running build_py
+[7.950s] creating /home/mgazzola/ros2_spirob_ws/build/robot_gui/build
+[7.951s] creating /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib
+[7.952s] creating /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib/robot_gui
+[7.956s] copying robot_gui/robot_GUI_node.py -> /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib/robot_gui
+[7.958s] copying robot_gui/__init__.py -> /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib/robot_gui
+[7.961s] copying robot_gui/robot_GUI_display.py -> /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib/robot_gui
+[7.963s] running install
+[7.982s] running install_lib
+[8.148s] creating /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui
+[8.153s] copying /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib/robot_gui/robot_GUI_node.py -> /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui
+[8.156s] copying /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib/robot_gui/__init__.py -> /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui
+[8.157s] copying /home/mgazzola/ros2_spirob_ws/build/robot_gui/build/lib/robot_gui/robot_GUI_display.py -> /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui
+[8.162s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui/robot_GUI_node.py to robot_GUI_node.cpython-312.pyc
+[8.163s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui/__init__.py to __init__.cpython-312.pyc
+[8.167s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_gui/robot_GUI_display.py to robot_GUI_display.cpython-312.pyc
+[8.170s] running install_data
+[8.171s] copying resource/robot_GUI -> /home/mgazzola/ros2_spirob_ws/install/robot_gui/share/ament_index/resource_index/packages
+[8.175s] creating /home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_GUI
+[8.176s] copying package.xml -> /home/mgazzola/ros2_spirob_ws/install/robot_gui/share/robot_GUI
+[8.176s] running install_egg_info
+[8.331s] Copying ../../build/robot_gui/robot_GUI.egg-info to /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/python3.12/site-packages/robot_GUI-0.0.0-py3.12.egg-info
+[8.337s] running install_scripts
+[9.349s] Installing robot_GUI_node script to /home/mgazzola/ros2_spirob_ws/install/robot_gui/lib/robot_GUI
+[9.357s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/robot_gui/install.log'

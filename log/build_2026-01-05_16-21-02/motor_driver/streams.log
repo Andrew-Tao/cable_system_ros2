@@ -1,0 +1,25 @@
+[6.575s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/motor_driver': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/motor_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_driver build --build-base /home/mgazzola/ros2_spirob_ws/build/motor_driver/build install --record /home/mgazzola/ros2_spirob_ws/build/motor_driver/install.log --single-version-externally-managed install_data
+[8.585s] running egg_info
+[8.720s] writing ../../build/motor_driver/motor_driver.egg-info/PKG-INFO
+[8.721s] writing dependency_links to ../../build/motor_driver/motor_driver.egg-info/dependency_links.txt
+[8.725s] writing entry points to ../../build/motor_driver/motor_driver.egg-info/entry_points.txt
+[8.725s] writing requirements to ../../build/motor_driver/motor_driver.egg-info/requires.txt
+[8.728s] writing top-level names to ../../build/motor_driver/motor_driver.egg-info/top_level.txt
+[9.000s] reading manifest file '../../build/motor_driver/motor_driver.egg-info/SOURCES.txt'
+[9.007s] writing manifest file '../../build/motor_driver/motor_driver.egg-info/SOURCES.txt'
+[9.011s] running build
+[9.013s] running build_py
+[9.016s] copying motor_driver/motor_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver
+[9.017s] running install
+[9.050s] running install_lib
+[9.194s] copying /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver/motor_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver
+[9.201s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver/motor_publisher_node.py to motor_publisher_node.cpython-312.pyc
+[9.208s] running install_data
+[9.211s] running install_egg_info
+[9.366s] removing '/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver-0.0.0-py3.12.egg-info' (and everything under it)
+[9.369s] Copying ../../build/motor_driver/motor_driver.egg-info to /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver-0.0.0-py3.12.egg-info
+[9.397s] running install_scripts
+[10.863s] Installing motor_driver_node script to /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/motor_driver
+[10.868s] Installing motor_publisher_node script to /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/motor_driver
+[10.869s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/motor_driver/install.log'
+[11.307s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/motor_driver' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/motor_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_driver build --build-base /home/mgazzola/ros2_spirob_ws/build/motor_driver/build install --record /home/mgazzola/ros2_spirob_ws/build/motor_driver/install.log --single-version-externally-managed install_data

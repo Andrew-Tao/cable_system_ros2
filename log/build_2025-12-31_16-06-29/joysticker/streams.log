@@ -1,0 +1,21 @@
+[8.681s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/joysticker': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/joysticker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joysticker build --build-base /home/mgazzola/ros2_spirob_ws/build/joysticker/build install --record /home/mgazzola/ros2_spirob_ws/build/joysticker/install.log --single-version-externally-managed install_data
+[10.698s] running egg_info
+[10.880s] writing ../../build/joysticker/joysticker.egg-info/PKG-INFO
+[10.887s] writing dependency_links to ../../build/joysticker/joysticker.egg-info/dependency_links.txt
+[10.889s] writing entry points to ../../build/joysticker/joysticker.egg-info/entry_points.txt
+[10.897s] writing requirements to ../../build/joysticker/joysticker.egg-info/requires.txt
+[10.903s] writing top-level names to ../../build/joysticker/joysticker.egg-info/top_level.txt
+[11.755s] reading manifest file '../../build/joysticker/joysticker.egg-info/SOURCES.txt'
+[11.778s] writing manifest file '../../build/joysticker/joysticker.egg-info/SOURCES.txt'
+[11.790s] running build
+[11.791s] running build_py
+[11.814s] running install
+[11.935s] running install_lib
+[12.315s] running install_data
+[12.316s] running install_egg_info
+[12.729s] removing '/home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages/joysticker-0.0.0-py3.12.egg-info' (and everything under it)
+[12.731s] Copying ../../build/joysticker/joysticker.egg-info to /home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages/joysticker-0.0.0-py3.12.egg-info
+[12.736s] running install_scripts
+[14.356s] Installing joysticker_publisher_node script to /home/mgazzola/ros2_spirob_ws/install/joysticker/lib/joysticker
+[14.359s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/joysticker/install.log'
+[14.801s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/joysticker' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/joysticker/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/joysticker/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joysticker build --build-base /home/mgazzola/ros2_spirob_ws/build/joysticker/build install --record /home/mgazzola/ros2_spirob_ws/build/joysticker/install.log --single-version-externally-managed install_data

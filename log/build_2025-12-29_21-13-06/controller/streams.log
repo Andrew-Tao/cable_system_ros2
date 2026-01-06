@@ -1,0 +1,46 @@
+[13.197s] Invoking command in '/home/mgazzola/ros2_spirob_ws/build/controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/mgazzola/ros2_spirob_ws/build/controller/build
+[19.771s] running develop
+[23.138s] Removing /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller.egg-link (link to .)
+[25.053s] Invoked command in '/home/mgazzola/ros2_spirob_ws/build/controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/mgazzola/ros2_spirob_ws/build/controller/build
+[25.066s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/mgazzola/ros2_spirob_ws/build/controller/build install --record /home/mgazzola/ros2_spirob_ws/build/controller/install.log --single-version-externally-managed install_data --force
+[28.530s] running egg_info
+[28.725s] writing ../../build/controller/controller.egg-info/PKG-INFO
+[28.727s] writing dependency_links to ../../build/controller/controller.egg-info/dependency_links.txt
+[28.731s] writing entry points to ../../build/controller/controller.egg-info/entry_points.txt
+[28.732s] writing requirements to ../../build/controller/controller.egg-info/requires.txt
+[28.734s] writing top-level names to ../../build/controller/controller.egg-info/top_level.txt
+[29.170s] reading manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[29.175s] writing manifest file '../../build/controller/controller.egg-info/SOURCES.txt'
+[29.176s] running build
+[29.179s] running build_py
+[29.180s] creating /home/mgazzola/ros2_spirob_ws/build/controller/build
+[29.181s] creating /home/mgazzola/ros2_spirob_ws/build/controller/build/lib
+[29.183s] creating /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller
+[29.185s] copying controller/pid_controller.py -> /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller
+[29.185s] copying controller/norm_to_three_motors.py -> /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller
+[29.186s] copying controller/setup_controller.py -> /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller
+[29.189s] copying controller/pid_controller_node.py -> /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller
+[29.197s] copying controller/__init__.py -> /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller
+[29.198s] running install
+[29.256s] running install_lib
+[29.495s] creating /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller
+[29.500s] copying /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller/pid_controller.py -> /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller
+[29.502s] copying /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller/norm_to_three_motors.py -> /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller
+[29.507s] copying /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller/setup_controller.py -> /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller
+[29.515s] copying /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller/pid_controller_node.py -> /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller
+[29.517s] copying /home/mgazzola/ros2_spirob_ws/build/controller/build/lib/controller/__init__.py -> /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller
+[29.518s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller/pid_controller.py to pid_controller.cpython-312.pyc
+[29.519s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller/norm_to_three_motors.py to norm_to_three_motors.cpython-312.pyc
+[29.520s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller/setup_controller.py to setup_controller.cpython-312.pyc
+[29.531s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller/pid_controller_node.py to pid_controller_node.cpython-312.pyc
+[29.541s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller/__init__.py to __init__.cpython-312.pyc
+[29.543s] running install_data
+[29.544s] copying resource/controller -> /home/mgazzola/ros2_spirob_ws/install/controller/share/ament_index/resource_index/packages
+[29.548s] copying package.xml -> /home/mgazzola/ros2_spirob_ws/install/controller/share/controller
+[29.552s] running install_egg_info
+[29.838s] Copying ../../build/controller/controller.egg-info to /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller-0.0.0-py3.12.egg-info
+[29.852s] running install_scripts
+[31.871s] Installing pid_controller_node script to /home/mgazzola/ros2_spirob_ws/install/controller/lib/controller
+[31.873s] Installing setup_node script to /home/mgazzola/ros2_spirob_ws/install/controller/lib/controller
+[31.878s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/controller/install.log'
+[32.219s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/controller build --build-base /home/mgazzola/ros2_spirob_ws/build/controller/build install --record /home/mgazzola/ros2_spirob_ws/build/controller/install.log --single-version-externally-managed install_data --force

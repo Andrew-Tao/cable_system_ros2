@@ -1,0 +1,2 @@
+[console_scripts]
+load_publisher_node = load_cell.load_publisher_node:main

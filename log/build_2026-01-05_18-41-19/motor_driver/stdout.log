@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/motor_driver/motor_driver.egg-info/PKG-INFO
+writing dependency_links to ../../build/motor_driver/motor_driver.egg-info/dependency_links.txt
+writing entry points to ../../build/motor_driver/motor_driver.egg-info/entry_points.txt
+writing requirements to ../../build/motor_driver/motor_driver.egg-info/requires.txt
+writing top-level names to ../../build/motor_driver/motor_driver.egg-info/top_level.txt
+reading manifest file '../../build/motor_driver/motor_driver.egg-info/SOURCES.txt'
+writing manifest file '../../build/motor_driver/motor_driver.egg-info/SOURCES.txt'
+running build
+running build_py
+copying motor_driver/motor_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver
+copying motor_driver/motor_driver_node.py -> /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver
+running install
+running install_lib
+copying /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver/motor_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver
+copying /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver/motor_driver_node.py -> /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver
+byte-compiling /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver/motor_publisher_node.py to motor_publisher_node.cpython-312.pyc
+byte-compiling /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver/motor_driver_node.py to motor_driver_node.cpython-312.pyc
+running install_data
+running install_egg_info
+removing '/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/motor_driver/motor_driver.egg-info to /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver-0.0.0-py3.12.egg-info
+running install_scripts
+Installing motor_driver_node script to /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/motor_driver
+Installing motor_publisher_node script to /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/motor_driver
+writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/motor_driver/install.log'

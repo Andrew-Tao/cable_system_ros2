@@ -1,0 +1,33 @@
+[31mCMake Error at /opt/ros/kilted/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+  execute_process(/home/mgazzola/ros2_spirob_ws/.venv/bin/python3 -m
+  rosidl_adapter --package-name more_interfaces --arguments-file
+  /home/mgazzola/ros2_spirob_ws/build/more_interfaces/rosidl_adapter__arguments__more_interfaces.json
+  --output-dir
+  /home/mgazzola/ros2_spirob_ws/build/more_interfaces/rosidl_adapter/more_interfaces
+  --output-file
+  /home/mgazzola/ros2_spirob_ws/build/more_interfaces/rosidl_adapter/more_interfaces.idls)
+  returned error code 1:
+
+  Traceback (most recent call last):
+
+    File "<frozen runpy>", line 198, in _run_module_as_main
+    File "<frozen runpy>", line 88, in _run_code
+    File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+      main()
+    File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/main.py", line 54, in main
+      abs_idl_file = convert_to_idl(
+                     ^^^^^^^^^^^^^^^
+    File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 21, in convert_to_idl
+      from rosidl_adapter.msg import convert_msg_to_idl
+    File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 19, in <module>
+      from rosidl_adapter.resource import expand_template, MsgData
+    File "/opt/ros/kilted/lib/python3.12/site-packages/rosidl_adapter/resource/__init__.py", line 21, in <module>
+      import em
+
+  ModuleNotFoundError: No module named 'em'
+
+Call Stack (most recent call first):
+  /opt/ros/kilted/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+  CMakeLists.txt:13 (rosidl_generate_interfaces)
+
+[0m

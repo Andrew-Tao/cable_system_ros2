@@ -1,0 +1,20 @@
+[8.025s] Invoking command in '/home/mgazzola/ros2_spirob_ws/build/controller': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mgazzola/ros2_spirob_ws/build/controller/build --no-deps symlink_data --force
+[10.346s] running develop
+[11.787s] running egg_info
+[11.925s] writing controller.egg-info/PKG-INFO
+[11.928s] writing dependency_links to controller.egg-info/dependency_links.txt
+[11.937s] writing entry points to controller.egg-info/entry_points.txt
+[11.941s] writing requirements to controller.egg-info/requires.txt
+[11.943s] writing top-level names to controller.egg-info/top_level.txt
+[12.244s] reading manifest file 'controller.egg-info/SOURCES.txt'
+[12.248s] writing manifest file 'controller.egg-info/SOURCES.txt'
+[12.439s] running build_ext
+[12.441s] Creating /home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages/controller.egg-link (link to .)
+[12.453s] Installing pid_controller_node script to /home/mgazzola/ros2_spirob_ws/install/controller/lib/controller
+[12.458s] Installing setup_node script to /home/mgazzola/ros2_spirob_ws/install/controller/lib/controller
+[12.462s] 
+[12.465s] Installed /home/mgazzola/ros2_spirob_ws/build/controller
+[12.470s] running symlink_data
+[12.475s] symbolically linking /home/mgazzola/ros2_spirob_ws/build/controller/resource/controller -> /home/mgazzola/ros2_spirob_ws/install/controller/share/ament_index/resource_index/packages
+[12.477s] symbolically linking /home/mgazzola/ros2_spirob_ws/build/controller/package.xml -> /home/mgazzola/ros2_spirob_ws/install/controller/share/controller
+[13.161s] Invoked command in '/home/mgazzola/ros2_spirob_ws/build/controller' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/controller/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mgazzola/ros2_spirob_ws/build/controller/build --no-deps symlink_data --force

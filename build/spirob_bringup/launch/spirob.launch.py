@@ -1,0 +1,1 @@
+/home/mgazzola/ros2_spirob_ws/src/spirob_bringup/launch/spirob.launch.py

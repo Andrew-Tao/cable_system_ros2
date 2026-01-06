@@ -1,0 +1,21 @@
+[11.974s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/load_cell': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/load_cell build --build-base /home/mgazzola/ros2_spirob_ws/build/load_cell/build install --record /home/mgazzola/ros2_spirob_ws/build/load_cell/install.log --single-version-externally-managed install_data
+[14.321s] running egg_info
+[14.540s] writing ../../build/load_cell/load_cell.egg-info/PKG-INFO
+[14.549s] writing dependency_links to ../../build/load_cell/load_cell.egg-info/dependency_links.txt
+[14.557s] writing entry points to ../../build/load_cell/load_cell.egg-info/entry_points.txt
+[14.560s] writing requirements to ../../build/load_cell/load_cell.egg-info/requires.txt
+[14.565s] writing top-level names to ../../build/load_cell/load_cell.egg-info/top_level.txt
+[14.936s] reading manifest file '../../build/load_cell/load_cell.egg-info/SOURCES.txt'
+[14.940s] writing manifest file '../../build/load_cell/load_cell.egg-info/SOURCES.txt'
+[14.954s] running build
+[14.957s] running build_py
+[14.958s] running install
+[15.048s] running install_lib
+[15.259s] running install_data
+[15.266s] running install_egg_info
+[15.727s] removing '/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell-0.0.0-py3.12.egg-info' (and everything under it)
+[15.745s] Copying ../../build/load_cell/load_cell.egg-info to /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages/load_cell-0.0.0-py3.12.egg-info
+[15.789s] running install_scripts
+[17.857s] Installing load_publisher_node script to /home/mgazzola/ros2_spirob_ws/install/load_cell/lib/load_cell
+[17.860s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/load_cell/install.log'
+[18.278s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/load_cell' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/load_cell/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/load_cell/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/load_cell build --build-base /home/mgazzola/ros2_spirob_ws/build/load_cell/build install --record /home/mgazzola/ros2_spirob_ws/build/load_cell/install.log --single-version-externally-managed install_data

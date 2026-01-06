@@ -1,0 +1,21 @@
+[6.348s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/robot_GUI': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/robot_GUI/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/robot_GUI/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_GUI build --build-base /home/mgazzola/ros2_spirob_ws/build/robot_GUI/build install --record /home/mgazzola/ros2_spirob_ws/build/robot_GUI/install.log --single-version-externally-managed install_data
+[7.669s] running egg_info
+[7.763s] writing ../../build/robot_GUI/robot_GUI.egg-info/PKG-INFO
+[7.764s] writing dependency_links to ../../build/robot_GUI/robot_GUI.egg-info/dependency_links.txt
+[7.768s] writing entry points to ../../build/robot_GUI/robot_GUI.egg-info/entry_points.txt
+[7.769s] writing requirements to ../../build/robot_GUI/robot_GUI.egg-info/requires.txt
+[7.771s] writing top-level names to ../../build/robot_GUI/robot_GUI.egg-info/top_level.txt
+[7.970s] reading manifest file '../../build/robot_GUI/robot_GUI.egg-info/SOURCES.txt'
+[7.978s] writing manifest file '../../build/robot_GUI/robot_GUI.egg-info/SOURCES.txt'
+[7.979s] running build
+[7.980s] running build_py
+[7.981s] running install
+[8.011s] running install_lib
+[8.107s] running install_data
+[8.109s] running install_egg_info
+[8.212s] removing '/home/mgazzola/ros2_spirob_ws/install/robot_GUI/lib/python3.12/site-packages/robot_GUI-0.0.0-py3.12.egg-info' (and everything under it)
+[8.213s] Copying ../../build/robot_GUI/robot_GUI.egg-info to /home/mgazzola/ros2_spirob_ws/install/robot_GUI/lib/python3.12/site-packages/robot_GUI-0.0.0-py3.12.egg-info
+[8.224s] running install_scripts
+[8.932s] Installing robot_GUI_node script to /home/mgazzola/ros2_spirob_ws/install/robot_GUI/lib/robot_GUI
+[8.934s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/robot_GUI/install.log'
+[9.099s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/robot_GUI' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/robot_GUI/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/robot_GUI/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_GUI build --build-base /home/mgazzola/ros2_spirob_ws/build/robot_GUI/build install --record /home/mgazzola/ros2_spirob_ws/build/robot_GUI/install.log --single-version-externally-managed install_data

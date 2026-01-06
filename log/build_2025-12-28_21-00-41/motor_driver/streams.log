@@ -1,0 +1,47 @@
+[3.801s] Invoking command in '/home/mgazzola/ros2_spirob_ws/src/motor_driver': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/motor_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_driver build --build-base /home/mgazzola/ros2_spirob_ws/build/motor_driver/build install --record /home/mgazzola/ros2_spirob_ws/build/motor_driver/install.log --single-version-externally-managed install_data
+[5.022s] running egg_info
+[5.023s] creating ../../build/motor_driver/motor_driver.egg-info
+[5.107s] writing ../../build/motor_driver/motor_driver.egg-info/PKG-INFO
+[5.109s] writing dependency_links to ../../build/motor_driver/motor_driver.egg-info/dependency_links.txt
+[5.110s] writing entry points to ../../build/motor_driver/motor_driver.egg-info/entry_points.txt
+[5.111s] writing requirements to ../../build/motor_driver/motor_driver.egg-info/requires.txt
+[5.112s] writing top-level names to ../../build/motor_driver/motor_driver.egg-info/top_level.txt
+[5.113s] writing manifest file '../../build/motor_driver/motor_driver.egg-info/SOURCES.txt'
+[5.293s] reading manifest file '../../build/motor_driver/motor_driver.egg-info/SOURCES.txt'
+[5.296s] writing manifest file '../../build/motor_driver/motor_driver.egg-info/SOURCES.txt'
+[5.297s] running build
+[5.298s] running build_py
+[5.299s] creating /home/mgazzola/ros2_spirob_ws/build/motor_driver/build
+[5.300s] creating /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib
+[5.302s] creating /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver
+[5.303s] copying motor_driver/multi_motor_scheduler.py -> /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver
+[5.304s] copying motor_driver/motor_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver
+[5.305s] copying motor_driver/__init__.py -> /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver
+[5.306s] copying motor_driver/motor_driver_node.py -> /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver
+[5.306s] copying motor_driver/motor.py -> /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver
+[5.307s] running install
+[5.331s] running install_lib
+[5.420s] creating /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver
+[5.421s] copying /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver/multi_motor_scheduler.py -> /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver
+[5.422s] copying /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver/motor_publisher_node.py -> /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver
+[5.423s] copying /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver/__init__.py -> /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver
+[5.424s] copying /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver/motor_driver_node.py -> /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver
+[5.425s] copying /home/mgazzola/ros2_spirob_ws/build/motor_driver/build/lib/motor_driver/motor.py -> /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver
+[5.428s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver/multi_motor_scheduler.py to multi_motor_scheduler.cpython-312.pyc
+[5.434s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver/motor_publisher_node.py to motor_publisher_node.cpython-312.pyc
+[5.438s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver/__init__.py to __init__.cpython-312.pyc
+[5.439s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver/motor_driver_node.py to motor_driver_node.cpython-312.pyc
+[5.441s] byte-compiling /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver/motor.py to motor.cpython-312.pyc
+[5.444s] running install_data
+[5.445s] creating /home/mgazzola/ros2_spirob_ws/install/motor_driver/share/ament_index
+[5.446s] creating /home/mgazzola/ros2_spirob_ws/install/motor_driver/share/ament_index/resource_index
+[5.448s] creating /home/mgazzola/ros2_spirob_ws/install/motor_driver/share/ament_index/resource_index/packages
+[5.449s] copying resource/motor_driver -> /home/mgazzola/ros2_spirob_ws/install/motor_driver/share/ament_index/resource_index/packages
+[5.450s] copying package.xml -> /home/mgazzola/ros2_spirob_ws/install/motor_driver/share/motor_driver
+[5.451s] running install_egg_info
+[5.544s] Copying ../../build/motor_driver/motor_driver.egg-info to /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages/motor_driver-0.0.0-py3.12.egg-info
+[5.550s] running install_scripts
+[6.222s] Installing motor_driver_node script to /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/motor_driver
+[6.223s] Installing motor_publisher_node script to /home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/motor_driver
+[6.225s] writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/motor_driver/install.log'
+[6.386s] Invoked command in '/home/mgazzola/ros2_spirob_ws/src/motor_driver' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/mgazzola/ros2_spirob_ws/build/motor_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mgazzola/ros2_spirob_ws/install/motor_driver/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motor_driver build --build-base /home/mgazzola/ros2_spirob_ws/build/motor_driver/build install --record /home/mgazzola/ros2_spirob_ws/build/motor_driver/install.log --single-version-externally-managed install_data
