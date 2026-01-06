@@ -3,6 +3,7 @@ import json
 import pandas as pd
 import os
 import cv2
+import re
 
 import rosbag2_py
 from rclpy.serialization import deserialize_message
@@ -12,43 +13,51 @@ from geometry_msgs.msg import Vector3
 from sensor_msgs.msg import CompressedImage
 
 
-def frames_to_mp4(
-    frames_dir,
-    output_dir,
-    output_name="output.mp4",
-    fps=30
-):
+def frames_to_mp4(frames_dir, output_dir, output_name="output.mp4", fps=30):
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, output_name)
 
-    # Get sorted list of jpg files
-    frame_files = sorted([
-        f for f in os.listdir(frames_dir)
-        if f.lower().endswith(".jpg")
-    ])
-
+    frame_files = [f for f in os.listdir(frames_dir) if f.lower().endswith(".jpg")]
     if not frame_files:
-        raise RuntimeError("No .jpg frames found")
+        raise RuntimeError(f"No .jpg frames found in {frames_dir}")
 
-    # Read first frame to get size
-    first_frame = cv2.imread(os.path.join(frames_dir, frame_files[0]))
-    height, width, _ = first_frame.shape
+    # Extract numeric index from filename like "123.jpg" (or "frame_123.jpg")
+    def frame_index(name: str) -> int:
+        m = re.search(r"(\d+)(?=\.jpg$)", name.lower())
+        if not m:
+            # Put non-matching files at the end (or raise if you prefer)
+            return 10**18
+        return int(m.group(1))
 
-    # Video writer
+    frame_files.sort(key=frame_index)
+
+    first_path = os.path.join(frames_dir, frame_files[0])
+    first_frame = cv2.imread(first_path)
+    if first_frame is None:
+        raise RuntimeError(f"Failed to read first frame: {first_path}")
+
+    height, width = first_frame.shape[:2]
+
     fourcc = cv2.VideoWriter_fourcc(*"mp4v")
     video = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
 
+    written = 0
     for fname in frame_files:
         frame_path = os.path.join(frames_dir, fname)
         frame = cv2.imread(frame_path)
-
         if frame is None:
-            continue  # skip corrupted frames
+            print(f"Warning: skipped unreadable frame {frame_path}")
+            continue
+
+        # Ensure consistent size (VideoWriter requires constant frame size)
+        if frame.shape[0] != height or frame.shape[1] != width:
+            frame = cv2.resize(frame, (width, height), interpolation=cv2.INTER_AREA)
 
         video.write(frame)
+        written += 1
 
     video.release()
-    print(f"Saved video to: {output_path}")
+    print(f"Saved video to: {output_path} (frames written: {written})")
 
 
 def mcap_to_csv(bag_path, out_name):
@@ -131,8 +140,6 @@ def mcap_to_csv(bag_path, out_name):
 
     print(f"Saved {csv_file_path}")
 
-
-    
     # Convert the jpg frames to a .mp4 file
     frames_to_mp4(
         frames_dir=frames_dict_path,
@@ -140,6 +147,13 @@ def mcap_to_csv(bag_path, out_name):
         output_name=f"{out_name}.mp4",
         fps=20
     )
+
+
+if __name__ == "__main__":
+    dict = "/home/mgazzola/ros2_spirob_ws/exp_ws/results/stablity_motor2_2026-01-06_12-26-25/frames"
+    out = "/home/mgazzola/ros2_spirob_ws/exp_ws/results/stablity_motor2_2026-01-06_12-26-25"
+
+    frames_to_mp4(dict, out)
     
     
 

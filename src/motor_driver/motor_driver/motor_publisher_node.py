@@ -24,28 +24,29 @@ class MotorCmdPublisher(Node):
 		msg = Vector3()
 		time_elapsed = time.monotonic() - self.start_time
 
+		"""
 		msg.x = -100.0
 		msg.y = -100.0
 		msg.z = -100.0
-		
-		"""
+		"""	
 
 		if not self.get_parameter("enable_running").value:
 			print("motor is not enabled")
 			msg.x = 0.0
 			msg.y = 0.0
 			msg.z = 0.0
+
 		else:
 			print("Motor is Enabled")
 			if time_elapsed % self.period <= (self.period / 2):
-				msg.x = 300.0
-				msg.y = 0.0
+				msg.x = 0.0
+				msg.y = 300.0
 				msg.z = 0.0
 			else:
-				msg.x = -300.0
-				msg.y = 0.0
+				msg.x = 0.0
+				msg.y = -300
 				msg.z = 0.0
-		"""
+
 
 		self.publisher.publish(msg)
 		self.get_logger().info('Publishing: "%f"' % msg.x)

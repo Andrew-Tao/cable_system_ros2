@@ -8,7 +8,7 @@ import signal
 
 class ExperimentLauncher:
     
-    def __init__(self, experiment_name = "NO_NAME", duration = 5):
+    def __init__(self, experiment_name = "NO_NAME", duration = 24):
           
           self.stamp = f"_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
           self.exp_name = experiment_name + self.stamp
@@ -85,7 +85,7 @@ class ExperimentLauncher:
 
 
 def main():
-    exp = ExperimentLauncher(experiment_name= "system_test_01")
+    exp = ExperimentLauncher(experiment_name= "stablity_motor2")
     exp.run()
 
 if __name__ == '__main__':
