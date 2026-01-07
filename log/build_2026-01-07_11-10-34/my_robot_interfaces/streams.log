@@ -1,0 +1,25 @@
+[0.054s] Invoking command in '/home/mgazzola/ros2_spirob_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mgazzola/ros2_spirob_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/mgazzola/ros2_spirob_ws/install/my_robot_interfaces
+[0.121s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[0.252s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.651s] -- Found rosidl_default_generators: 1.7.1 (/opt/ros/kilted/share/rosidl_default_generators/cmake)
+[0.662s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.878s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.011s] -- Found rosidl_adapter: 4.9.5 (/opt/ros/kilted/share/rosidl_adapter/cmake)
+[1.018s] -- Found builtin_interfaces: 2.3.0 (/opt/ros/kilted/share/builtin_interfaces/cmake)
+[2.543s] -- Found ament_cmake_ros_core: 0.14.3 (/opt/ros/kilted/share/ament_cmake_ros_core/cmake)
+[2.998s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.601s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.717s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[4.770s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[5.028s] [31mCMake Error at /opt/ros/kilted/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake:29 (message):
+[5.029s]   ament_environment_hooks() must be called before
+[5.029s]   ament_generate_package_environment() (which is invoked by ament_package())
+[5.030s] Call Stack (most recent call first):
+[5.030s]   /opt/ros/kilted/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake:20 (ament_environment_hooks)
+[5.031s]   /opt/ros/kilted/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[5.031s]   /opt/ros/kilted/share/ament_cmake_core/cmake/core/ament_package.cmake:66 (ament_execute_extensions)
+[5.032s]   CMakeLists.txt:36 (ament_package)
+[5.032s] 
+[5.033s] [0m
+[5.033s] -- Configuring incomplete, errors occurred!
+[5.066s] Invoked command in '/home/mgazzola/ros2_spirob_ws/build/my_robot_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mgazzola/ros2_spirob_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/mgazzola/ros2_spirob_ws/install/my_robot_interfaces

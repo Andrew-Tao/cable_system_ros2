@@ -1,0 +1,44 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_robot_interfaces/action/RunMotorProfile.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+
+module my_robot_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal: time-parameterized profile for x(t), y(t), z(t) over a duration." "\n"
+      "Represented as samples at specific times.")
+    struct RunMotorProfile_Goal {
+      builtin_interfaces::msg::Duration duration;
+
+      @verbatim (language="comment", text=
+        "Sample times (seconds from start). Must be nondecreasing.")
+      sequence<double> t;
+
+      @verbatim (language="comment", text=
+        "Values at each time sample. Must match length of t.")
+      sequence<double> x;
+
+      sequence<double> y;
+
+      sequence<double> z;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct RunMotorProfile_Result {
+      boolean success;
+
+      string message;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct RunMotorProfile_Feedback {
+      @verbatim (language="comment", text=
+        "0.0 to 1.0")
+      float progress;
+
+      builtin_interfaces::msg::Duration elapsed;
+    };
+  };
+};

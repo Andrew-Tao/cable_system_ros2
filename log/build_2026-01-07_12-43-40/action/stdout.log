@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/action/action.egg-info
+writing ../../build/action/action.egg-info/PKG-INFO
+writing dependency_links to ../../build/action/action.egg-info/dependency_links.txt
+writing entry points to ../../build/action/action.egg-info/entry_points.txt
+writing requirements to ../../build/action/action.egg-info/requires.txt
+writing top-level names to ../../build/action/action.egg-info/top_level.txt
+writing manifest file '../../build/action/action.egg-info/SOURCES.txt'
+reading manifest file '../../build/action/action.egg-info/SOURCES.txt'
+writing manifest file '../../build/action/action.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/mgazzola/ros2_spirob_ws/build/action/build
+creating /home/mgazzola/ros2_spirob_ws/build/action/build/lib
+creating /home/mgazzola/ros2_spirob_ws/build/action/build/lib/action
+copying action/motor_cmd_action.py -> /home/mgazzola/ros2_spirob_ws/build/action/build/lib/action
+copying action/__init__.py -> /home/mgazzola/ros2_spirob_ws/build/action/build/lib/action
+running install
+running install_lib
+creating /home/mgazzola/ros2_spirob_ws/install/action/lib/python3.12/site-packages/action
+copying /home/mgazzola/ros2_spirob_ws/build/action/build/lib/action/motor_cmd_action.py -> /home/mgazzola/ros2_spirob_ws/install/action/lib/python3.12/site-packages/action
+copying /home/mgazzola/ros2_spirob_ws/build/action/build/lib/action/__init__.py -> /home/mgazzola/ros2_spirob_ws/install/action/lib/python3.12/site-packages/action
+byte-compiling /home/mgazzola/ros2_spirob_ws/install/action/lib/python3.12/site-packages/action/motor_cmd_action.py to motor_cmd_action.cpython-312.pyc
+byte-compiling /home/mgazzola/ros2_spirob_ws/install/action/lib/python3.12/site-packages/action/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/mgazzola/ros2_spirob_ws/install/action/share/ament_index
+creating /home/mgazzola/ros2_spirob_ws/install/action/share/ament_index/resource_index
+creating /home/mgazzola/ros2_spirob_ws/install/action/share/ament_index/resource_index/packages
+copying resource/action -> /home/mgazzola/ros2_spirob_ws/install/action/share/ament_index/resource_index/packages
+copying package.xml -> /home/mgazzola/ros2_spirob_ws/install/action/share/action
+running install_egg_info
+Copying ../../build/action/action.egg-info to /home/mgazzola/ros2_spirob_ws/install/action/lib/python3.12/site-packages/action-0.0.0-py3.12.egg-info
+running install_scripts
+Installing motor_cmd_action script to /home/mgazzola/ros2_spirob_ws/install/action/lib/action
+writing list of installed files to '/home/mgazzola/ros2_spirob_ws/build/action/install.log'
