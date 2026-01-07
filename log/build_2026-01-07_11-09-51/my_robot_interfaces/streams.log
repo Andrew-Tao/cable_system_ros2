@@ -1,0 +1,21 @@
+[0.051s] Invoking command in '/home/mgazzola/ros2_spirob_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mgazzola/ros2_spirob_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/mgazzola/ros2_spirob_ws/install/my_robot_interfaces
+[0.120s] -- Found ament_cmake: 2.7.3 (/opt/ros/kilted/share/ament_cmake/cmake)
+[1.185s] -- Found rosidl_default_generators: 1.7.1 (/opt/ros/kilted/share/rosidl_default_generators/cmake)
+[1.195s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.404s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.528s] -- Found rosidl_adapter: 4.9.5 (/opt/ros/kilted/share/rosidl_adapter/cmake)
+[1.535s] -- Found builtin_interfaces: 2.3.0 (/opt/ros/kilted/share/builtin_interfaces/cmake)
+[4.714s] -- Found ament_cmake_ros_core: 0.14.3 (/opt/ros/kilted/share/ament_cmake_ros_core/cmake)
+[6.887s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.823s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[12.219s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[12.524s] -- Found ament_lint_auto: 0.19.2 (/opt/ros/kilted/share/ament_lint_auto/cmake)
+[12.526s] -- Configuring incomplete, errors occurred!
+[12.527s] [31mCMake Error at /opt/ros/kilted/share/ament_lint_auto/cmake/ament_lint_auto-extras.cmake:18 (message):
+[12.528s]   find_package(ament_lint_auto) must be called before ament_package()
+[12.529s] Call Stack (most recent call first):
+[12.529s]   /opt/ros/kilted/share/ament_lint_auto/cmake/ament_lint_autoConfig.cmake:41 (include)
+[12.530s]   CMakeLists.txt:24 (find_package)
+[12.531s] 
+[12.532s] [0m
+[12.574s] Invoked command in '/home/mgazzola/ros2_spirob_ws/build/my_robot_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/kilted DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mgazzola/ros2_spirob_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/mgazzola/ros2_spirob_ws/install/my_robot_interfaces

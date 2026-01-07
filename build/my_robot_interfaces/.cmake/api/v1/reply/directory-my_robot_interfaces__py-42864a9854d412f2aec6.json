@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "my_robot_interfaces__py",
+		"source" : "/home/mgazzola/ros2_spirob_ws/build/my_robot_interfaces/my_robot_interfaces__py"
+	}
+}

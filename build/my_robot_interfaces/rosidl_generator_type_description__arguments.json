@@ -1,0 +1,13 @@
+{
+  "package_name": "my_robot_interfaces",
+  "output_dir": "/home/mgazzola/ros2_spirob_ws/build/my_robot_interfaces/rosidl_generator_type_description/my_robot_interfaces",
+  "idl_tuples": [
+    "/home/mgazzola/ros2_spirob_ws/build/my_robot_interfaces/rosidl_adapter/my_robot_interfaces:action/RunMotorProfile.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/kilted/share/builtin_interfaces",
+    "service_msgs:/opt/ros/kilted/share/service_msgs",
+    "action_msgs:/opt/ros/kilted/share/action_msgs",
+    "unique_identifier_msgs:/opt/ros/kilted/share/unique_identifier_msgs"
+  ]
+}
