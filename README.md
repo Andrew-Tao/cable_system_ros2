@@ -1,6 +1,41 @@
 # cable_system_ros2
-Control programs for the cable driver test system.
-If it's the first time you use the package. Before launching any ros2 packages, install the dependency python with
+
+ROS 2 control framework for a **cable-driven test system** running on a Raspberry Pi with remote visualization, control, and data acquisition on a macOS client.
+
+This repository provides motor control, vision streaming, load-cell acquisition, joystick input, and experiment orchestration for cable-driven robotic experiments.
+
+---
+
+## System Overview
+
+The system consists of **two coordinated components**:
+
+### 1. Raspberry Pi (ROS 2 Host)
+Runs all hardware-level ROS 2 nodes:
+- Motor drivers  
+- Vision pipeline  
+- Load-cell acquisition  
+- Experiment orchestration and rosbag recording  
+
+### 2. Mac (Client)
+- Establishes a TCP socket connection to the Raspberry Pi  
+- Displays live video and GUI  
+- Receives experiment results automatically  
+
+---
+
+## Prerequisites
+
+- ROS 2 installed on the Raspberry Pi  
+- Python virtual environment (`.venv`)  
+- `pigpio` installed and enabled on the Raspberry Pi  
+
+---
+
+## Installation
+
+If this is your **first time using the package**, install Python dependencies:
+
 ```bash
 pip install -r requirement.txt
 ``` 
