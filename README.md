@@ -39,7 +39,9 @@ If this is your **first time using the package**, install Python dependencies:
 ```bash
 pip install -r requirement.txt
 ``` 
+---
 
+## Running
 **The following codes are the basic procdure to activate the cable test system**
 **It's composed of two parts 1. Launch the ROS nodes on rabsberry pi 2. Connect socket pipe from your Mac**
 
