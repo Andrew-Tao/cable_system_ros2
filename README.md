@@ -1,8 +1,9 @@
 # cable_system_ros2
 Control programs for the cable driver test system.
-
-
-
+If it's the first time you use the package. Before launching any ros2 packages, install the dependency python with
+```bash
+pip install -r requirement.txt
+``` 
 
 **The following codes are the basic procdure to activate the cable test system**
 **It's composed of two parts 1. Launch the ROS nodes on rabsberry pi 2. Connect socket pipe from your Mac**
