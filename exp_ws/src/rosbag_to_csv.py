@@ -65,7 +65,6 @@ def mcap_to_csv(bag_path, out_name):
     out_path = os.path.expanduser("~/ros2_spirob_ws/exp_ws/results")
 
     result_path = os.path.join(out_path, out_name)
-    csv_file_path = os.path.join(result_path,f"{out_name}.csv")
     frames_dict_path = os.path.join(result_path,"frames/")
 
 
@@ -110,6 +109,7 @@ def mcap_to_csv(bag_path, out_name):
                 value = getattr(msg, name)
                 rows.append({
                     "timestamp": t_ns * 1e-9,
+                    "topic" : topic,
                     (topic + f"_{name}"): json.dumps(value, default=str)
                 })
 
@@ -119,7 +119,8 @@ def mcap_to_csv(bag_path, out_name):
 
             rows.append({
                 "timestamp": t_ns * 1e-9,
-                (topic + f"_{name}"): json.dumps(frame_index, default=str)
+                "topic" : topic,
+                (topic): json.dumps(frame_index, default=str)
             })
 
             filename = f"{frame_index}.jpg"
@@ -132,13 +133,29 @@ def mcap_to_csv(bag_path, out_name):
 
             frame_index +=1 
 
+    classified = {"/motor_status":[], "/load_data":[],"/joystick_inputs":[],"/video_frames":[]}
+    for row in rows:
+        topic = row["topic"]
+        if topic == "/motor_status":
+            classified["/motor_status"].append(row)
+        elif topic == "/load_data":
+            classified["/load_data"].append(row)
+        elif topic == "/joystick_inputs":
+            classified["/joystick_inputs"].append(row)
+        elif topic == "/video_frames":
+            classified["/video_frames"].append(row)
 
-    df = pd.DataFrame(rows)
-    df = df.groupby("timestamp", as_index=False).first()
-    df.sort_values("timestamp", inplace=True)
-    df.to_csv(csv_file_path, index=False)
+    path_motor = os.path.join(result_path,f"{out_name}_motor.csv")
+    path_load = os.path.join(result_path,f"{out_name}_load.csv")
+    path_joy = os.path.join(result_path,f"{out_name}_joystick.csv")
+    path_video = os.path.join(result_path,f"{out_name}_video.csv")
 
-    print(f"Saved {csv_file_path}")
+    make_csv(classified["/motor_status"], path_motor)
+    make_csv(classified["/load_data"], path_load)
+    make_csv(classified["/joystick_inputs"], path_joy)
+    make_csv(classified["/video_frames"], path_video)
+
+    print(f"Saved {result_path}")
 
     # Convert the jpg frames to a .mp4 file
     frames_to_mp4(
@@ -148,6 +165,12 @@ def mcap_to_csv(bag_path, out_name):
         fps=20
     )
 
+def make_csv(rows, path):
+    df = pd.DataFrame(rows)
+    df = df.groupby("timestamp", as_index=False).first()
+    df.sort_values("timestamp", inplace=True)
+    df.to_csv(path, index=False)
+
 
 if __name__ == "__main__":
     dict = "/home/mgazzola/ros2_spirob_ws/exp_ws/results/stablity_motor2_2026-01-06_12-26-25/frames"
@@ -156,7 +179,6 @@ if __name__ == "__main__":
     frames_to_mp4(dict, out)
     
     
-
 
 
 

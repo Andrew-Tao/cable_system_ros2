@@ -8,7 +8,7 @@ import signal
 
 class ExperimentLauncher:
     
-    def __init__(self, experiment_name = "NO_NAME", duration = 24):
+    def __init__(self, experiment_name = "Motor2_Triagnle_Wave_10_periods", duration = 8 * 10):
           
           self.stamp = f"_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
           self.exp_name = experiment_name + self.stamp
@@ -20,13 +20,44 @@ class ExperimentLauncher:
 
     def launch_motor_publisher(self):
 
-        launch_cmd = ["ros2","launch", "spirob_bringup", "exp.launch.py"]
+        launch_cmd = ["ros2","launch", "spirob_bringup", "exp.launch.py",f"duration:={self.duration}"]
         self.motor_proc = subprocess.Popen(launch_cmd, start_new_session=True)
 
-    def stop(self):
+
+    def run(self):
+
+        try:
+
+            # Launch the ros2 bag record. 
+            # Start listen before the launch of the motor_publisher
+            # Ensure all the data get collected
+
+            self.bag_out_dir = os.path.join(self.bag_path, self.exp_name)
+            topic_recorded = ["/joystick_inputs", "/motor_status", "/load_data", "/video_frames"]
+            bag_cmd = ["ros2", "bag", "record", "-o", self.bag_out_dir] + topic_recorded
+            self.bag_proc = subprocess.Popen(bag_cmd, preexec_fn=os.setsid)
+
+            time.sleep(1)
+
+
+            # Launch the motor_publisher_node
+
+            self.launch_motor_publisher()
             
+            # Wait for duration of the experiment
+
+            time.sleep(self.duration + 1) # Ensure the launch motor have time to finish  
+
+            self.stop()
+
+        except KeyboardInterrupt:
+             self.stop()
+             print("\nCtrl+C detected. Exiting safely.")
+
+    def stop(self):
+        
         # Terminate motor publisher node and send zero commands to motors
-    
+
         subprocess.run([
             "ros2", "param", "set",
             "/motor_publisher",
@@ -34,15 +65,15 @@ class ExperimentLauncher:
             "false"
         ], check=True)
 
-         # Terminate the ros2 bag recording.
+        
+        # Terminate the ros2 bag recording.
 
         self.bag_proc.send_signal(signal.SIGINT)
-
         self.motor_proc.send_signal(signal.SIGINT)
 
         # Convert the rosbag to csv format
 
-        print(self.bag_out_dir)
+        print("Converting the rosbag to csv")
         
         mcap_to_csv(self.bag_out_dir, self.exp_name)
 
@@ -57,31 +88,6 @@ class ExperimentLauncher:
             "True"
         ], check=True)
 
-
-    def run(self):
-
-        try:
-
-            # Launch the motor_publisher_node
-
-            self.launch_motor_publisher()
-            
-            # Launch the ros2 bag record.
-
-            self.bag_out_dir = os.path.join(self.bag_path, self.exp_name)
-            topic_recorded = ["/joystick_inputs", "/motor_status", "/load_data", "/video_frames"]
-            bag_cmd = ["ros2", "bag", "record", "-o", self.bag_out_dir] + topic_recorded
-            self.bag_proc = subprocess.Popen(bag_cmd, preexec_fn=os.setsid)
-
-            # Wait for duration of the experiment
-
-            time.sleep(self.duration)  
-
-            self.stop()
-
-        except KeyboardInterrupt:
-             self.stop()
-             print("\nCtrl+C detected. Exiting safely.")
 
 
 def main():
