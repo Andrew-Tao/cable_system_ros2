@@ -48,7 +48,7 @@ class MultiStepperMotor():
                 time.sleep(0.1)
                 print("Same velocity, skipping")
                 with self.lock:
-                    self.update_motor_status([v * 0.01 for v in velocities]) # Update positions based on velocity
+                    self.update_motor_status([v * 0.1 for v in velocities]) # Update positions based on velocity
                 continue
 
             periods = []
@@ -116,7 +116,7 @@ class MultiStepperMotor():
 
             time.sleep(0.1)
             with self.lock:
-                self.update_motor_status([v * 0.01 for v in velocities]) # Update positions based on velocity
+                self.update_motor_status([v * 0.1 for v in velocities]) # Update positions based on velocity
 
             last_velocity = velocities
   
