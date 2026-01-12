@@ -133,7 +133,7 @@ def mcap_to_csv(bag_path, out_name):
 
             frame_index +=1 
 
-    classified = {"/motor_status":[], "/load_data":[],"/joystick_inputs":[],"/video_frames":[]}
+    classified = {"/motor_status":[], "/load_data":[],"/joystick_inputs":[],"/video_frames":[],"/motor_cmd":[]}
     for row in rows:
         topic = row["topic"]
         if topic == "/motor_status":
@@ -142,6 +142,8 @@ def mcap_to_csv(bag_path, out_name):
             classified["/load_data"].append(row)
         elif topic == "/joystick_inputs":
             classified["/joystick_inputs"].append(row)
+        elif topic == "/motor_cmd":
+            classified["/motor_cmd"].append(row)
         elif topic == "/video_frames":
             classified["/video_frames"].append(row)
 
@@ -149,11 +151,14 @@ def mcap_to_csv(bag_path, out_name):
     path_load = os.path.join(result_path,f"{out_name}_load.csv")
     path_joy = os.path.join(result_path,f"{out_name}_joystick.csv")
     path_video = os.path.join(result_path,f"{out_name}_video.csv")
+    path_cmd = os.path.join(result_path,f"{out_name}_cmd.csv")
+
 
     make_csv(classified["/motor_status"], path_motor)
     make_csv(classified["/load_data"], path_load)
     make_csv(classified["/joystick_inputs"], path_joy)
     make_csv(classified["/video_frames"], path_video)
+    make_csv(classified["/motor_cmd"], path_cmd)
 
     print(f"Saved {result_path}")
 

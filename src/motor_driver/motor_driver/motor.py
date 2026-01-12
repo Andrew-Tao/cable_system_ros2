@@ -17,7 +17,7 @@ class StepperMotor():
 
         self.lock = threading.Lock()
     
-        self.velocity = 0
+        self.velocity = 0 # Steps per second
         self.running = True
         self._latest_position = 0.0
     

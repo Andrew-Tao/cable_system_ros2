@@ -8,7 +8,7 @@ import signal
 
 class ExperimentLauncher:
     
-    def __init__(self, experiment_name = "Motor2_Triagnle_Wave_10_periods", duration = 8 * 10):
+    def __init__(self, experiment_name = "Debug_motor_repeatbility", duration = 5*8):
           
           self.stamp = f"_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
           self.exp_name = experiment_name + self.stamp
@@ -33,7 +33,7 @@ class ExperimentLauncher:
             # Ensure all the data get collected
 
             self.bag_out_dir = os.path.join(self.bag_path, self.exp_name)
-            topic_recorded = ["/joystick_inputs", "/motor_status", "/load_data", "/video_frames"]
+            topic_recorded = ["/joystick_inputs", "/motor_status", "/load_data", "/video_frames","/motor_cmd"]
             bag_cmd = ["ros2", "bag", "record", "-o", self.bag_out_dir] + topic_recorded
             self.bag_proc = subprocess.Popen(bag_cmd, preexec_fn=os.setsid)
 
@@ -70,6 +70,8 @@ class ExperimentLauncher:
 
         self.bag_proc.send_signal(signal.SIGINT)
         self.motor_proc.send_signal(signal.SIGINT)
+
+        time.sleep(4)
 
         # Convert the rosbag to csv format
 

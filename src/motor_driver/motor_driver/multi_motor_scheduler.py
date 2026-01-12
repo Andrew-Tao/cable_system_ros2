@@ -45,10 +45,10 @@ class MultiStepperMotor():
 
             print("Velocities:", velocities)
             if velocities == last_velocity:
-                time.sleep(0.1)
+                time.sleep(0.001)
                 print("Same velocity, skipping")
                 with self.lock:
-                    self.update_motor_status([v * 0.1 for v in velocities]) # Update positions based on velocity
+                    self.update_motor_status([v * 0.0001 for v in velocities]) # Update positions based on velocity
                 continue
 
             periods = []
@@ -75,7 +75,7 @@ class MultiStepperMotor():
             if not any(active):
                 self.pi.wave_tx_stop()     # stop the previous repeating wave
                 self.pi.wave_clear()       # clear any old wave data
-                time.sleep(0.01)
+                time.sleep(0.001)
                 last_velocity = velocities
                 continue
 
@@ -114,9 +114,9 @@ class MultiStepperMotor():
                 self.pi.wave_send_repeat(wave_id)
             # ---- end merged timeline wave ----
 
-            time.sleep(0.1)
+            time.sleep(0.001)
             with self.lock:
-                self.update_motor_status([v * 0.1 for v in velocities]) # Update positions based on velocity
+                self.update_motor_status([v * 0.001 for v in velocities]) # Update positions based on velocity
 
             last_velocity = velocities
   

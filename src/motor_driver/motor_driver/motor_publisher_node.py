@@ -25,6 +25,13 @@ class MotorCmdPublisher(Node):
 		self.duration = self.get_parameter("duration").value
 
 
+		self.switch_change = False
+		self.last_speed = True
+		self.last_time_debug = time.time()
+
+		self._first_enable = True
+
+
 	def	timer_callback(self):
 		msg = Vector3()
 		time_elapsed = time.time() - self.start_time
@@ -40,27 +47,51 @@ class MotorCmdPublisher(Node):
 			msg.x = 0.0
 			msg.y = 0.0
 			msg.z = 0.0
-			self.start_time = time.time() # The start_time is when the motor is enabled
+			self.last_time_debug = time.time()
+			self.time_record = time.time()
 
 		else:
+			
 			if time_elapsed > self.duration:
 				self.set_parameters([
     				Parameter("enable_running", value=False)
 				])
 
+			if self.switch_change:
+				self.get_logger().info(f"Last Interval:{self.time_record-self.last_time_debug}")
+				self.switch_change = False
+				self.last_time_debug = time.time()
+			
+
+			if  self._first_enable:
+				self.start_time = time.time()
+				self._first_enable = False
+
+
 			#print("Motor is Enabled")
 			if time_elapsed % self.period <= (self.period / 2):
+				if self.last_speed == False:
+					self.switch_change = True
+					self.time_record = time.time()
+		
 				msg.x = 0.0
 				msg.y = 300.0
 				msg.z = 0.0
+				self.last_speed = True
+				
 			else:
+				if self.last_speed == True:
+					self.switch_change = True
+					self.time_record = time.time()
 				msg.x = 0.0
 				msg.y = -300.0
 				msg.z = 0.0
+				self.last_speed = False
 
 
 		self.publisher.publish(msg)
-		self.get_logger().info('Time: "%f", Publishing: "%f"' % (time_elapsed, msg.y))
+		#self.get_logger().info('Time: "%f", Publishing: "%f"' % (time_elapsed, msg.y))
+		
 		self.i += 1
 
 def main(args = None):
