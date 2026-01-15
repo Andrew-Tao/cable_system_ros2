@@ -1,6 +1,0 @@
-{
-  "package_name": "my_robot_interfaces",
-  "non_idl_tuples": [
-    "/home/mgazzola/ros2_spirob_ws/src/my_robot_interfaces:action/RunMotorProfile.action"
-  ]
-}

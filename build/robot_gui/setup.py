@@ -1,1 +1,0 @@
-/home/mgazzola/ros2_spirob_ws/src/robot_gui/setup.py

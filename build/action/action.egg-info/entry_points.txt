@@ -1,2 +1,0 @@
-[console_scripts]
-motor_cmd_action = action.motor_cmd_action:main

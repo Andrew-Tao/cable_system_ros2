@@ -1,3 +1,0 @@
-[console_scripts]
-motor_driver_node = motor_driver.motor_driver_node:main
-motor_publisher_node = motor_driver.motor_publisher_node:main

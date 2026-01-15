@@ -1,3 +1,0 @@
-[console_scripts]
-pid_controller_node = controller.pid_controller_node:main
-setup_node = controller.setup_controller:main

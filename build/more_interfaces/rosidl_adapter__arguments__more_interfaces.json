@@ -1,6 +1,0 @@
-{
-  "package_name": "more_interfaces",
-  "non_idl_tuples": [
-    "/home/mgazzola/ros2_spirob_ws/src/more_interfaces:motor_status_interface/ThreeMotorStatus.msg"
-  ]
-}

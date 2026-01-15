@@ -1,2 +1,0 @@
-[console_scripts]
-rsync_trigger = data_transfer.rsync_trigger:main

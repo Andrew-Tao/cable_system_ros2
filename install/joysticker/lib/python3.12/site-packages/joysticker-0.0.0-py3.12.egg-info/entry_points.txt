@@ -1,2 +1,0 @@
-[console_scripts]
-joysticker_publisher_node = joysticker.joysticker_publisher_node:main
