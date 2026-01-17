@@ -46,6 +46,6 @@ python3 exp_ws/src/experiment.py
 ```
 It will launch the motor_publihsher_node for experimental duration [s] and record the nodes (/motor_status /joystick_inputs /load_data /video_frames) into a rosbag and convert them into a csv file and use TCP to send the result onto your mac. 
 
-** To developer, while running a new program automation program not known to be robust, always put your left hand on the emergency stop button in cases the program go run and break the whole hardware system. After turning off the switch, the power to the system will be cut off within 0.5s and the rasberry pi will still be own. Turning back the power only when you are sure all processes are done **
+** To developer, while running a new program automation program not known to be robust, always put your left hand on the emergency stop button in cases the program go wrong and break the whole hardware system. After turning off the switch, the power to the system will be cut off within 0.5s and the rasberry pi will still be on. Turning back the power only when you are sure all processes are done **
 
 
