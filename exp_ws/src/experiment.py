@@ -8,7 +8,7 @@ import signal
 
 class ExperimentLauncher:
     
-    def __init__(self, experiment_name = "Debug_motor_repeatbility", duration = 5*8):
+    def __init__(self, experiment_name = "Debug_motor_repeatbility", duration =60):
           
           self.stamp = f"_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
           self.exp_name = experiment_name + self.stamp
@@ -20,7 +20,9 @@ class ExperimentLauncher:
 
     def launch_motor_publisher(self):
 
-        launch_cmd = ["ros2","launch", "spirob_bringup", "exp.launch.py",f"duration:={self.duration}"]
+        #launch_cmd = ["ros2","launch", "spirob_bringup", "exp.launch.py",f"duration:={self.duration}"]
+        launch_cmd = ["python3","/home/mgazzola/ros2_spirob_ws/exp_ws/src/task_execute.py"]
+
         self.motor_proc = subprocess.Popen(launch_cmd, start_new_session=True)
 
 
@@ -35,8 +37,9 @@ class ExperimentLauncher:
             self.bag_out_dir = os.path.join(self.bag_path, self.exp_name)
             topic_recorded = ["/joystick_inputs", "/motor_status", "/load_data", "/video_frames","/motor_cmd"]
             bag_cmd = ["ros2", "bag", "record", "-o", self.bag_out_dir] + topic_recorded
+            #print("Ros bag start at", time.perf_counter())
             self.bag_proc = subprocess.Popen(bag_cmd, preexec_fn=os.setsid)
-
+            
             time.sleep(1)
 
 
@@ -46,7 +49,7 @@ class ExperimentLauncher:
             
             # Wait for duration of the experiment
 
-            time.sleep(self.duration + 1) # Ensure the launch motor have time to finish  
+            time.sleep(self.duration + 4) # Ensure the launch motor have time to finish  
 
             self.stop()
 
@@ -57,21 +60,22 @@ class ExperimentLauncher:
     def stop(self):
         
         # Terminate motor publisher node and send zero commands to motors
-
+        """
         subprocess.run([
             "ros2", "param", "set",
             "/motor_publisher",
             "enable_running",
             "false"
         ], check=True)
-
+        """
         
         # Terminate the ros2 bag recording.
 
         self.bag_proc.send_signal(signal.SIGINT)
-        self.motor_proc.send_signal(signal.SIGINT)
+        #print("Ros bag ends at", time.perf_counter())
+        #self.motor_proc.send_signal(signal.SIGINT)
 
-        time.sleep(4)
+        time.sleep(2)
 
         # Convert the rosbag to csv format
 
@@ -93,7 +97,7 @@ class ExperimentLauncher:
 
 
 def main():
-    exp = ExperimentLauncher(experiment_name= "stablity_motor2")
+    exp = ExperimentLauncher(experiment_name= "Load_Cell_Debug_without_fixing_V+_with_load1", duration = 72)
     exp.run()
 
 if __name__ == '__main__':

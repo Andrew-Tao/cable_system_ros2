@@ -159,7 +159,7 @@ def mcap_to_csv(bag_path, out_name):
     make_csv(classified["/load_data"], path_load)
     make_csv(classified["/joystick_inputs"], path_joy)
     make_csv(classified["/video_frames"], path_video)
-    make_csv(classified["/motor_cmd"], path_cmd)
+    #make_csv(classified["/motor_cmd"], path_cmd)
 
     print(f"Saved {result_path}")
 
@@ -205,14 +205,14 @@ def make_motor_status_csv(path):
     time = 0
 
     while time <= last_time:
-        print(time)
+        #print(time)
         row = {"timestamp":time + start_time}
         for i in range(len(motor_profile)):
             if time >= last_time_motors[i]:
                 continue
             for time_idx, time_value in enumerate(motor_profile[i][0]):
                 if time_value <= time:
-                    print("time_value",time_value,"time",time,"i",i,"time_idx+1",time_idx+1)
+                    #print("time_value",time_value,"time",time,"i",i,"time_idx+1",time_idx+1)
                     gap_step = (motor_profile[i][1][time_idx+1] - motor_profile[i][1][time_idx])
                     gap_time = (motor_profile[i][0][time_idx+1] - motor_profile[i][0][time_idx])
                     step = (gap_step / gap_time) * (time - time_value) + motor_profile[i][1][time_idx]

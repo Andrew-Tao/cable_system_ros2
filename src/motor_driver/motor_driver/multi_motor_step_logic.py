@@ -77,6 +77,7 @@ class MultiStepperMotor():
 
         self.merged_last_idx = [0] * len(self.motors)
         #print(self.merged_tasks)
+        #print(self.merged_delta_time)
     
 
         # Find the last motor index
@@ -184,13 +185,28 @@ class MultiStepperMotor():
 
         while t < chunk_us:
             t_next = min(next_toggle)
+            #print("t_next",t_next)
             if t_next >= 10**17: # Filter out the periods that's too large
                 break  # nothing active
 
             # delay until next event
             delay = t_next - t
+            #print("delay",delay,dir_on_mask,dir_off_mask)
             if delay > 0:
-                pulses.append(pigpio.pulse(dir_on_mask, dir_off_mask, delay)) # Only the dir_pins running
+
+                if delay >= chunk_us:
+                    pulses.append(pigpio.pulse(dir_on_mask, dir_off_mask, int(chunk_us))) # Only the dir_pins running
+            
+                elif delay > 4294967295: 
+                    delay_temp = delay
+                    while True:
+                        pulses.append(pigpio.pulse(dir_on_mask, dir_off_mask, 4294967295))
+                        delay_temp -= 4294967295
+                        if delay_temp <= 4294967295:
+                            pulses.append(pigpio.pulse(dir_on_mask, dir_off_mask, delay_temp))
+                            break
+                else:
+                    pulses.append(pigpio.pulse(dir_on_mask, dir_off_mask, delay)) # Only the dir_pins running
                 t = t_next
 
             # toggle all motors that are due at this time
@@ -318,13 +334,10 @@ class MultiStepperMotor():
 
         return pulses
         
-    def run(self):
+    def chunk_list(self, lst, chunk_size=6000):
+        return [lst[i:i + chunk_size] for i in range(0, len(lst), chunk_size)]
 
-        self.pi.wave_add_generic(self.pulses)
-        wave_id = self.pi.wave_create()
-        # record done the start time
-        self.execute_start_time = time.time()
-        self.pi.wave_send_once(wave_id)
+    def run(self):
 
         # Write down the executing information to the targeted file
         tasks = []
@@ -334,15 +347,34 @@ class MultiStepperMotor():
         with open(self.motor_profile_path, "w") as f:
             json.dump(tasks, f, indent =2) 
         
+        # record done the start time
+        self.execute_start_time = time.time()
+        
         with open(self.execute_start_time_path, "w") as f:
             json.dump(self.execute_start_time, f, indent = 2)
 
-        # BLOCK until finished transmitting
-        while self.pi.wave_tx_busy():
-            time.sleep(0.001)
- 
-        self.pi.wave_tx_stop()
-        self.pi.wave_delete(wave_id)
+        # Decompose the wave to smaller one
+        #print("total_length",len(self.pulses))
+        # -------------------Motors Running -----------------------
+        wave_chunk = self.chunk_list(self.pulses, chunk_size = 4800)
+
+        for pulses_chunk in wave_chunk:
+            #print("inputing_length",len(pulses_chunk))
+            self.pi.wave_add_generic(pulses_chunk)
+            wave_id = self.pi.wave_create()
+        
+            self.pi.wave_send_once(wave_id)
+
+            # BLOCK until finished transmitting
+            while self.pi.wave_tx_busy():
+                time.sleep(0.001)
+    
+            self.pi.wave_tx_stop()
+            self.pi.wave_delete(wave_id)
+            self.pi.wave_clear()   
+
+
+    
 
 def print_pulses(pulses):
     for i, p in enumerate(pulses):
@@ -395,27 +427,48 @@ if __name__ == "__main__":
                             [4.0,0.0],
                             [6.0,-3.0],
                             [8.0, 0.0]]).T
+    task_1 = np.array([[0.0,0.0],
+                            [2.0,600.0],
+                            [4.0,0.0],
+                            [6.0,-600.0],
+                            [8.0, 0.0]]).T
+
     
     discrete_task_2  = np.array([[0.0,0.0],
                             [4.0,-3.0],
                             [5.0,-3.0]]).T
+
+    task_load = np.array([
+        [0.0,0.0],
+        [8.0,600],
+        [16.0,600],
+        [24.0,1200],
+        [32.0,1200],
+        [40.0,600],
+        [48.0,600],
+        [56.0,0],
+        [64.0,0],
+    ]).T
+    task_load[0,:] += 8.0
+    task_load = np.hstack((np.array([0.0,0.0]).reshape(2, 1),task_load))
+
     #print(discrete_task_1.shape)
 
     periods = [10, 21, 10000]
     chunk = 100
-    motors.recieve_task([discrete_task_0,discrete_task_2])
+    motors.recieve_task([task_load])
     #motors.merge_tasks()
-    #pulses = motors.generate_waveform()
+    pulses = motors.generate_waveform()
     #print_pulses(pulses)
     #print(motors.merged_tasks)
     #wave = motors.single_chunk_waveform_builder(periods,chunk)
     #print_pulses(wave)
-    #handle = motors.execute_tasks()
-    #print("Motor running ...")
+    handle = motors.execute_tasks()
+    print("Motor running ...")
 
-    #result = handle.result()
+    result = handle.result()
 
-    #print("The motor finish the task")
+    print("The motor finish the task")
    
 
 
