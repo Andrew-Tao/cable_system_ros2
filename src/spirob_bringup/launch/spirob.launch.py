@@ -31,7 +31,7 @@ def generate_launch_description():
             package='motor_driver',
             executable='motor_driver_node',
             name='motor_control_subscriber',
-            output='screen',
+    
         ),
 
         Node(
@@ -45,21 +45,19 @@ def generate_launch_description():
             package = 'vision',
             executable = 'record_video_node',
             name = 'video_recorder',
-            output = 'screen',
         ),
 
         Node(
             package='joysticker',
             executable= 'joysticker_publisher_node',
             name = 'joystick_inputs',
-            output = 'screen',
+          
         ),
         
         Node(
             package='data_transfer', 
             executable = 'rsync_trigger',
             name = 'rsync_trigger_node',
-            output = 'screen',
         )
            
     ])

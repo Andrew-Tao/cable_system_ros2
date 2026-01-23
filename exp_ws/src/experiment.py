@@ -97,7 +97,7 @@ class ExperimentLauncher:
 
 
 def main():
-    exp = ExperimentLauncher(experiment_name= "Load_Cell_Debug_without_fixing_V+_with_load1", duration = 72)
+    exp = ExperimentLauncher(experiment_name= "Load_Cell_Debug_with_fix_empty", duration = 40)
     exp.run()
 
 if __name__ == '__main__':

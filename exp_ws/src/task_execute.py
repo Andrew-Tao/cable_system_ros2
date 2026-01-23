@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     task_0 = np.array([
         [0.0,0.0],
-        [72.0,0.0]
+        [40.0,0.0]
     ]).T
 
     task_load = np.array([
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     periods = [10, 21, 10000]
     chunk = 100
     print(task_load)
-    motors.recieve_task([task_load,task_0,task_0])
+    motors.recieve_task([task_0,task_0,task_0])
    
     #pulses = motors.generate_waveform()
     #print_pulses(pulses)

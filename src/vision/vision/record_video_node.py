@@ -61,13 +61,13 @@ class RecordVideoNode(Node):
             msg.data = jpg_frame.tobytes()
 
             self.publisher.publish(msg)
-            self.get_logger().info(f"Published frame {self.vision_system.frame_counter}")
+            #self.get_logger().info(f"Published frame {self.vision_system.frame_counter}")
 
             # Send frame data over socket
             data = jpg_frame.tobytes()
             header = struct.pack("!I", len(data))
             self.conn.sendall(header + data)
-            self.get_logger().info(f"Sent frame {self.vision_system.frame_counter} over TCP")
+            #self.get_logger().info(f"Sent frame {self.vision_system.frame_counter} over TCP")
 
             
 def main():

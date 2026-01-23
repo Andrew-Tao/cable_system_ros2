@@ -14,7 +14,8 @@ class LoadCell:
     def get_measurement(self, times=1):
 
         measurement = sum(self.hx711.get_raw_data(times)) / times
-        time.sleep(0.01)
+        time.sleep(0.1)
         return measurement
+
 
     
