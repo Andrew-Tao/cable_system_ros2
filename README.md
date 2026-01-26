@@ -83,5 +83,6 @@ source .venv/bin/activate
 python3 exp_ws/src/experiment.py 
 ```
 It will launch the motor_publihsher_node for experimental duration [s] and record the nodes (/motor_status /joystick_inputs /load_data /video_frames) into a rosbag and convert them into a csv file and use TCP to send the result onto your mac. 
+To adjust the task you want to run, modify the function in the program `exp_ws/src/task_execute.py`
 
 
