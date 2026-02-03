@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'load_publisher_node = load_cell.load_publisher_node:main'
+            'load_publisher_node = load_cell.load_publisher_node:main',
+            'load_measurement_node = load_cell.load_measurement_node:main'
         ],
     },
 )

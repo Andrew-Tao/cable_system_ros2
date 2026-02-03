@@ -7,16 +7,16 @@ import threading
 import rclpy
 
 
-class LoadPublisherNode(Node):
+class LoadMeasurementNode(Node):
 
     def __init__(self):
 
-        super().__init__('load_publisher_node')
+        super().__init__('load_get_measurement_load')
 
         # Publisher to publish load cell data
-        self.load_publisher = self.create_publisher(Vector3,'load_data',10)
-        self.timer_period = 1.0 / 20# Second
-        self.timer = self.create_timer(self.timer_period, self.load_publish_loop)
+        self.load_publisher = self.create_publisher(Vector3,'load_data_slow',10)
+        self.timer_period = 1.0 / 10# Second
+        self.timer = self.create_timer(self.timer_period, self.load_measurement_loop)
         self.i = 0
 
         #Load Cell setup
@@ -24,28 +24,22 @@ class LoadPublisherNode(Node):
         self.load_cell2 = LoadCell(dout_pin=13, pd_sck_pin=19, reference_unit=1)
         self.load_cell3 = LoadCell(dout_pin=20, pd_sck_pin=21, reference_unit=1)
 
-    def load_publish_loop(self):
-    
+    def load_measurement_loop(self):
         msg = Vector3()
 
-        self.load_cell1.get_measurement(times = 2)
-        self.load_cell2.get_measurement(times = 2)
-        self.load_cell3.get_measurement(times = 2)
+        msg.x = self.load_cell1.get_measurement(times = 2)
+        msg.y = self.load_cell2.get_measurement(times = 2)
+        msg.z = self.load_cell3.get_measurement(times = 2)
 
-        msg.x = float(self.load_cell1.latest_measurement)/1000
-        msg.y = float(self.load_cell2.latest_measurement)/1000
-        msg.z = float(self.load_cell3.latest_measurement)/1000
         self.get_logger().info(f"Publishing load cell data: x = {msg.x}, y = {msg.y}, z = {msg.z}")
 
         self.load_publisher.publish(msg)
 
-        
-
 def main():
     rclpy.init()
-    load_publisher_node = LoadPublisherNode()
-    rclpy.spin(load_publisher_node)
-    load_publisher_node.destroy_node()
+    load_measurement_node = LoadMeasurementNode()
+    rclpy.spin(load_measurement_node)
+    load_measurement_node.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
