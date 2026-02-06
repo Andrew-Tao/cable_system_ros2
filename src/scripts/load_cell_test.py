@@ -1,3 +1,4 @@
+import psutil
 import hx711
 import hx711_abyz
 import RPi.GPIO as GPIO
@@ -9,6 +10,8 @@ from tqdm import tqdm
 # from scipy import stats
 import argparse
 import logging
+from concurrent.futures import ThreadPoolExecutor
+import multiprocessing
 
 class LoadCell_abyz(hx711_abyz.HX711):
     def __init__(self, gpio, dout_pin, pd_sck_pin):
@@ -94,6 +97,50 @@ class LoadCell_hx711_sync(hx711.HX711):
 
         return signed_data
 
+def run_test(N: int, end_event: threading.Event):
+    print(f"Reading {N} samples from each load cell")
+
+    data = np.full((N, 3), np.nan)
+    times = np.full((N, 3), np.nan)
+    try:
+        for i in tqdm(range(N)):
+            for j, load_cell in enumerate(load_cells):
+                start_time = time.perf_counter_ns()
+                measurement = load_cell.get_measurement()
+                data[i][j] = int(measurement / 1000)
+                times[i][j] = time.perf_counter_ns() - start_time
+    except KeyboardInterrupt:
+        print("Performing cleanup...")
+    finally:
+        end_event.set()
+        return data, times
+
+def stress(end_event: threading.Event):
+    print("Running stress")
+    a = np.arange(2 * 2 * 4).reshape((2, 2, 4))
+    b = np.arange(2 * 2 * 4).reshape((2, 4, 2))
+    while not end_event.is_set():
+        np.matmul(a, b)
+        # np.sqrt(999999999.999999999)
+
+def multiprocess_stress(end_event: threading.Event):
+    cores = multiprocessing.cpu_count()
+    print(f"Running stress on all {cores} cores")
+    processes = []
+    for _ in range(cores):
+        p = multiprocessing.Process(target=stress, args=(end_event,))
+        p.start()
+        processes.append(p)
+    return processes
+
+def track_cpu(end_event: threading.Event):
+    print("Tracking CPU usage")
+    cpu = []
+    while not end_event.is_set():
+        load = psutil.cpu_percent(interval=1)
+        cpu.append(load)
+    return np.array(cpu)
+
 if __name__ == "__main__":
     GPIO.setwarnings(False)
 
@@ -103,6 +150,8 @@ if __name__ == "__main__":
     )
     parser.add_argument("-n", "-number-of-cycles", default=100, type=int)
     parser.add_argument("-l", "-load-cell-type", choices=['abyz', 'hx711', 'sync'], default='hx711', type=str)
+    parser.add_argument("-s", "-run-stress", action='store_true')
+    parser.add_argument("-c", "-track-cpu", action='store_true')
 
     args = parser.parse_args()
 
@@ -129,26 +178,26 @@ if __name__ == "__main__":
     # threads = [threading.Thread(target=load_cell.get_measurement) for load_cell in load_cells]
 
     N = args.n # 100
-    data = np.full((N, 3), np.nan)
-    times = np.full((N, 3), np.nan)
 
-    print(f"Reading {N} samples from each load cell")
+    with ThreadPoolExecutor() as executor:
+        end_event = threading.Event()
+        if args.s:
+            # executor.submit(stress, end_event)
+            processes = multiprocess_stress(end_event)
+        test_future = executor.submit(run_test, N, end_event)
+        if args.c:
+            cpu_future = executor.submit(track_cpu, end_event)
 
-    try:
-        for i in tqdm(range(N)):
-            for j, load_cell in enumerate(load_cells):
-                start_time = time.perf_counter_ns()
-                measurement = load_cell.get_measurement()
-                data[i][j] = int(measurement / 1000)
-                times[i][j] = time.perf_counter_ns() - start_time
-    except KeyboardInterrupt:
-        print("\nKeyboardInterrupt caught! Performing cleanup...")
-        print("Cleanup complete. Exiting program.")
-    finally:
-        print(bin(data))
+        data, times = test_future.result()
+        cpu = cpu_future.result()
+
+        if args.s:
+            for p in processes:
+                p.terminate()
+
+        print(data)
 
         # count outliers
-        # zscore = stats.zscore(data, axis=0, nan_policy='omit')
         Q1 = np.percentile(data, 25, axis=0)
         Q3 = np.percentile(data, 75, axis=0)
         IQR = Q3 - Q1
@@ -176,6 +225,7 @@ if __name__ == "__main__":
         print(f"Max number of consecutive outliers: {max_consec_outliers}")
 
         print(f"Average Read Time: {np.nanmean(times / 1e6)} ms")
+        print(f"Average CPU Usage: {np.nanmean(cpu)}%")
 
         # should_store_data = input("Store data? (Y/N) ").lower() == "y"
         # if should_store_data:
